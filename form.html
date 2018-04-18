@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Седона</title>
+        <link rel="stylesheet" href="source/css/style.css">
+    </head>
+    <body>
+        <header class="page-header">
+          <div class="page-wrapper">        <!--Обвертка-->
+              <nav class="nav header__nav">    <!--Блок, header__nav Микс для позиционированя-->
+                    <ul class="nav__list header__list"> <!--Блок, header__list Микс для позиционированя-->
+                        <button class="nav__toggle-close" type="button"></button>
+                       <li class="nav__list-item nav__list-item--active"> <!--Элемент и модификатор элемента -->
+                         <a>Главная</a>
+                       </li>
+                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                         <a>Фото и видео</a>
+                       </li>
+                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                         <a>Форма отзыва</a>
+                        </li>
+                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                         <a>HTML academy</a>
+                        </li>
+                    </ul>
+              </nav>
+                  <div class="logo header__logo">                           <!--header__logo Микс для позиционирования -->
+                        <img class="logo__img" src="#" alt="Логотип меню">
+                  </div>
+                  <div class="button header__button">                       <!--header__button Микс для позиционирования-->
+                    <button class="button__button" type="button"></button>
+                  </div>
+            <div class="greetings header__greetings">                   <!--header__greetings Микс для позиционирования-->
+                  <img class="greetings__img-form" src="#" alt="sedona">
+            </div>
+          </div>
+      </header>
+      <main class="main">
+        <div class="page-wrapper">
+            <form class="form">
+            <div class="information main__information">
+                <h2 class="main__title">Оставьте свой отзыв</h2>    <!--main__title микс для общего стиля-->
+                
+                <p class="information__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+            <div class="name-form main__name-form">
+                    <h2 class="main__title">Представьтесь</h2>     <!--main__title микс для общего стиля-->
+                    <p class="name-form__field">Имя<sup>*</sup>:</p><input class="name-form__name-field " name="username" type="text" value="" required placeholder="Петр">
+                    <p class="name-form__field">Фамилия<sup>*</sup>:</p><input class="name-form__two-name-field" name="username" type="text" value="" required placeholder="Иванов">
+                    <p class="name-form__field">Отчество:</p><input class="name-form__father-name-field" name="username" type="text" value="" required placeholder="Александрович">
+            </div>
+            <div class="cont-info main__cont-info">
+                <h2 class="main__title">Контактная информация</h2>     <!--main__title микс для общего стиля-->
+                <p class="cont-info__tel-text">Контактный телефон<sup>*</sup>:</p><input class="cont-info__field cont-info__field--tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
+                <p class="cont-info__mail-text">Электронная почта<sup>*</sup>:</p><input class="cont-info__field cont-info__field--mail" id="emailAddress" name="email" type="email" value="" required placeholder="Введите почту">
+            </div>  
+            <div class="impression main__impression">
+                <h2 class="main__title">Ваше общее впечатление</h2>   <!--main__title микс для общего стиля-->
+                <input class="impression__radio-button" type="radio" name="1" checked="checked" value="#" id="god"><label class="impression__radio-text" for="god">Скорее положительное</label>
+                <input class="impression__radio-button" type="radio" name="1" value="#" id="bad"><label class="impression__radio-text" for="bad">Скорее отрицательное</label>
+                <input class="impression__radio-button" type="radio" name="1" value="#" id="not"><label class="impression__radio-text" for="not">Заутрдняюсь ответить</label>
+            </div>
+            <div class="attraction main__attraction">
+                <h2 class="main__title">Ваше общее впечатление</h2>   <!--main__title микс для общего стиля-->
+
+                <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="bridge"/><label class="attraction__checkbox-text" for="bridge">Мост Дьявола</label>
+
+                <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="mounth"/><label class="attraction__checkbox-text" for="mounth">Гора-Колокол</label>
+
+                <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="park"/><label class="attraction__checkbox-text" for="park">Слайд-парк</label>
+
+                <input class="attraction__checkbox" type="checkbox" name="" id="rock"/><label class="attraction__checkbox-text" for="rock">Красные скалы</label>
+            </div>
+            <div class="emotions main__emotions">
+                <h2 class="main__title">Опишите свои эмоции:</h2>   <!--main__title микс для общего стиля-->
+
+                <textarea class="emotions__text-area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+
+                <button class="emotions__button button">Отправить отзыв</button>
+            </div>   
+            </form>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="page-wrapper">
+                <div class="hash footer__hash">
+                    <h3 class="hash__text">#VisitSedona</h3>
+                </div>
+                <div class="soc-button footer__soc-button">
+                    <a class="footer__social-btn footer__social-btn--twitter"></a>
+                    <a class="footer__social-btn footer__social-btn--facebook"></a>
+                    <a class="footer__social-btn footer__social-btn--youtube"></a>
+                </div>
+                <div class="develop footer__develop">
+                    <p class="develop__text">Разработано<img class="develop__icon" src="" alt="htmlacademy"></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
