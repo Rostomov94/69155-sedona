@@ -1,20 +1,23 @@
 .city-info {
-    max-width: 320px;
-    
     
     &--briefly {
         background-color: white;
-    }
-    
-    
+    } 
 }
 
 .city-info__img {
-    
+    width: 320px;
+    display: block;
 }
 
 .city-info__block {
    background-color: @sedona-blue;
+    
+    &--briefly {
+        background-color: @sedona-grey;
+        
+    }
+    
 }
 
 .city-info__title {
@@ -26,6 +29,11 @@
     
     padding-bottom: 16.5px;
     padding-top: 42px;
+    
+    &--briefly {
+        color: black;
+        
+    }
 }
 
 .city-info__number {
@@ -36,6 +44,10 @@
     text-align: center;
     
     padding-bottom: 24.5px;
+    
+    &--briefly { 
+        color: @litle-text;
+    }
 }
 
 .city-info__description {
@@ -46,5 +58,15 @@
     text-align: center;
     padding-bottom:  44.5px;
     
+    &--briefly { 
+        color: @litle-text;
+        border-bottom: 1px solid #d6d6d6;
+        margin-right: 36px;
+        margin-left: 36px;
+        
+        &:last-of-type {
+            
+        }
+    }
 }
 
