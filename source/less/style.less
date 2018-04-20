@@ -1,3 +1,36 @@
-body {
-    background: red; 
+@font-face {
+      font-family: 'Web font'; 
+      src: url('ptsans.woff2') format('woff2'), 
+           url('ptsans.woff') format('woff'),
+           url('ptsansbold.woff2') format('woff2'),
+           url('ptsansbold.woff') format('woff2');
+      font-weight: normal; 
+      font-style: normal; 
 }
+
+body {
+   
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+@import "variables.less";
+@import "mixins.less";
+@import "page-wrapper.less";
+
+
+@import "header.less";
+@import "nav.less";
+@import "logo.less";
+@import "button.less";
+@import "greetings.less";
+
+@import "main.less";
+@import "information.less";
+@import "city-info.less";
+@import "leisure.less";
