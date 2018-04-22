@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header class="header">
@@ -30,7 +30,7 @@
               
               
                   <div class="logo header__logo">                           <!--header__logo Микс для позиционирования -->
-                        <img class="logo__img" src="source/img/logo-sedona-mobile.svg" alt="Логотип меню">
+                        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип меню">
                   </div>
               
                   <div class="button header__button">                       <!--header__button Микс для позиционирования-->
@@ -45,7 +45,7 @@
 
          <div class="greetings main__greetings">                   <!--header__greetings Микс для позиционирования-->
             <div class="greetings__img">
-                <img class="greetings__text-sedona-index" src="source/img/text-sedona-index.svg">
+                <img class="greetings__text-sedona-index" src="img/text-sedona-index.svg">
                <!-- <img class="greetings__text-sedona" src="source/img/text-sedona.svg">--> 
                 <!--<div class="greetings__text-sedona-index"></div>
                 <div class="greetings__text-sedona"></div> -->
@@ -64,7 +64,7 @@
                 <p class="city-info__number">&mdash;№1&mdash;</p>
                 <p class="city-info__description">Седона не атракцион для туристов,<br> там течет своя жизнь!</p>
             </div>
-            <img class="city-info__img" src="source/img/main-city-mobile@1x.jpg" alt="Отель">
+            <img class="city-info__img" src="img/main-city-mobile@1x.jpg" alt="Отель">
         </div>
         <div class="leisure main__leisure">
             <ul class="leisure__list">
@@ -91,7 +91,7 @@
                 <p class="city-info__number">&mdash;№2&mdash;</p>
                 <p class="city-info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="city-info__img" src="source/img/photo-bridge-mobile@1x.jpg" alt="Каньон">
+            <img class="city-info__img" src="img/photo-bridge-mobile@1x.jpg" alt="Каньон">
         </div>
 
         <div class="city-info main__city-info city-info--briefly"> 
@@ -114,7 +114,7 @@
             <div class="city-info__block city-info__block--briefly">
                 <h2 class="city-info__title city-info__title--briefly">Мало туристов</h2> 
                 <p class="city-info__number city-info__number--briefly">&mdash;№5&mdash;</p>
-                <p class="city-info__description city-info__description--briefly">Большинство едет в гранд каньон<br>и толпится там</p>
+                <p class="city-info__description city-info__description--last city-info__description--briefly">Большинство едет в гранд каньон<br>и толпится там</p>
             </div>
         </div>
             
@@ -123,7 +123,9 @@
         <div class="hotel-search main__hotel-search">
             <h2 class="hotel-search__title">Заинтересовались?</h2>
             <p class="hotel-search__description">Укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br>  предложения гостиниц в седоне</p>
+            
             <button class="hotel-search__button">найти гостиницу</button>
+            
             <div class="hotel-search__map-bg">
              <!--   <img class="hotel-search__map" src="#" alt="Карта"> -->
             </div>
