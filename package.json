@@ -11,10 +11,6 @@
     "gulp-less": "^3.5.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-<<<<<<< HEAD
-    "@htmlacademy/editorconfig-cli": "1.x",
-=======
->>>>>>> 18d00139897b6ec246d7a0c905f2991e01e9cd74
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
