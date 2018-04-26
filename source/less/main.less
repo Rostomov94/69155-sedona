@@ -1,6 +1,7 @@
 .main {
    font-family: 'PT Sans', sans-serif;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main__greetings {
@@ -14,8 +15,31 @@
 }
 
 .main__city-info {
+    display: flex;
+    flex-direction: column;  
+}
+
+@media screen and (min-width: @tablet-width) {  //768px
     
+    .main__city-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+        &--briefly {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            flex-grow: 1;
     
+            flex-shrink: 0;
+
+            flex-basis: 33%;
+
+        } 
+    } 
+   
 }
 
 .main__leisure {
@@ -23,9 +47,6 @@
     margin-bottom: 42px;
 }
 
-.main__city-info {
-    
-}
 
 .main__hotel-search {
     

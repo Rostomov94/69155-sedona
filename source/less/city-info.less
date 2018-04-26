@@ -1,8 +1,6 @@
+
 .city-info {
     
-    &--briefly {
-        background-color: white;
-    } 
 }
 
 .city-info__img {
@@ -12,12 +10,6 @@
 
 .city-info__block {
    background-color: @sedona-blue;
-    
-    &--briefly {
-        background-color: @sedona-grey;
-        
-    }
-    
 }
 
 .city-info__title {
@@ -30,10 +22,7 @@
     padding-bottom: 16.5px;
     padding-top: 42px;
     
-    &--briefly {
-        color: black;
-        
-    }
+
 }
 
 .city-info__number {
@@ -44,10 +33,7 @@
     text-align: center;
     
     padding-bottom: 24.5px;
-    
-    &--briefly { 
-        color: @litle-text;
-    }
+
 }
 
 .city-info__description {
@@ -69,4 +55,70 @@
         border-bottom: none;
     }
 }
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .city-info {
+    
+        &--briefly {
+            
+        } 
+    }
+    
+    
+    .city-info__img {
+        
+        width: 510px;
+    }
+    
+    
+    .city-info__title {
+        font-size: 21px;
+        line-height: 26px;
+
+        &--briefly {
+            
+
+        }
+    }
+    
+    
+    .city-info__block {
+        width: 225px;
+        padding-right: 65px;
+        padding-left: 66px;
+        
+    &--devil-bridge {
+        order: 2;     
+    }
+        
+    
+    &--briefly {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+        
+    }
+    
+}
+      
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

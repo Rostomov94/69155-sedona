@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
       <header class="header">
@@ -29,7 +30,7 @@
               
               
                   <div class="logo header__logo">                           <!--header__logo Микс для позиционирования -->
-                        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип меню">
+                        <img class="logo__img" src="#" alt="Логотип меню">     <!--img/logo-sedona-mobile.svg -->
                   </div>
               
                   <div class="button header__button">                       <!--header__button Микс для позиционирования-->
@@ -44,7 +45,7 @@
 
          <div class="greetings main__greetings">                   <!--header__greetings Микс для позиционирования-->
             <div class="greetings__img">
-                <img class="greetings__text-sedona-index" src="img/text-sedona-index.svg">
+                <img class="greetings__text-sedona-index" src="#">  <!--img/text-sedona-index.svg-->
                <!-- <img class="greetings__text-sedona" src="source/img/text-sedona.svg">--> 
                 <!--<div class="greetings__text-sedona-index"></div>
                 <div class="greetings__text-sedona"></div> -->
@@ -59,12 +60,14 @@
             
         <div class="city-info main__city-info">
             <div class="city-info__block">
-                <h2 class="city-info__title">Настоящий Городок</h2>
+                <h2 class="city-info__title">Настоящий<br> Городок</h2>
                 <p class="city-info__number">&mdash;№1&mdash;</p>
                 <p class="city-info__description">Седона не атракцион для туристов,<br> там течет своя жизнь!</p>
             </div>
             <img class="city-info__img" src="img/main-city-mobile@1x.jpg" alt="Отель">
         </div>
+            
+            
         <div class="leisure main__leisure">
             <ul class="leisure__list">
                 <li class="leisure__item leisure__item--lodging">
@@ -84,36 +87,40 @@
                 </li>
             </ul>
         </div>
+            
+            
         <div class="city-info main__city-info">
-            <div class="city-info__block">
+            <div class="city-info__block city-info__block--devil-bridge">
                 <h2 class="city-info__title">Там есть Мост дьявола</h2>
                 <p class="city-info__number">&mdash;№2&mdash;</p>
                 <p class="city-info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <img class="city-info__img" src="img/photo-bridge-mobile@1x.jpg" alt="Каньон">
         </div>
+            
+            
 
-        <div class="city-info main__city-info city-info--briefly"> 
-            <div class="city-info__block city-info__block--briefly">
-                <h2 class="city-info__title city-info__title--briefly">Небольшая площадь</h2>    
-                <p class="city-info__number city-info__number--briefly">&mdash;№3&mdash;</p>
-                <p class="city-info__description city-info__description--briefly">Все интересные места находятся<br> очень близко</p>
+        <div class="reason main__reason">  
+            <div class="reason-block">
+                <h2 class="reason__title">Небольшая площадь</h2>    
+                <p class="reason__number">&mdash;№3&mdash;</p>
+                <p class="reason__description">Все интересные места находятся<br> очень близко</p> 
             </div>
         </div>
             
-        <div class="city-info main__city-info city-info--briefly">
-            <div class="city-info__block city-info__block--briefly">
-                <h2 class="city-info__title city-info__title--briefly">Красивая дорога</h2>   
-                <p class="city-info__number city-info__number--briefly main__title">&mdash;№4&mdash;</p>
-                <p class="city-info__description city-info__description--briefly">Ехать в Седону из Лас-вегаса<br> совсем не скучно!</p>
+        <div class="reason main__reason">
+            <div class="reason-block">
+                <h2 class="reason__title">Красивая дорога</h2>   
+                <p class="reason__number">&mdash;№4&mdash;</p>
+                <p class="reason__description">Ехать в Седону из Лас-вегаса<br> совсем не скучно!</p>
             </div>
         </div>
             
-        <div class="city-info main__city-info city-info--briefly city-info--briefly-last">  
-            <div class="city-info__block city-info__block--briefly">
-                <h2 class="city-info__title city-info__title--briefly">Мало туристов</h2> 
-                <p class="city-info__number city-info__number--briefly">&mdash;№5&mdash;</p>
-                <p class="city-info__description city-info__description--last city-info__description--briefly">Большинство едет в гранд каньон<br>и толпится там</p>
+        <div class="reason main__reason"> 
+            <div class="reason-block">
+                <h2 class="reason__title">Мало туристов</h2> 
+                <p class="reason__number">&mdash;№5&mdash;</p>
+                <p class="reason__description">Большинство едет в гранд каньон<br>и толпится там</p>
             </div>
         </div>
             

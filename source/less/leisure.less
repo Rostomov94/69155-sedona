@@ -1,12 +1,14 @@
 .leisure {
     background-color: white;
-    
-    
 }
 
 .leisure__list {
     list-style-type: none;
-   
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .leisure__item {
@@ -31,7 +33,7 @@
 }
 
 .leisure__img {
-    display: inline;
+    
 }
 
 .leisure__title {
@@ -56,3 +58,92 @@
     
     
 }
+
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .leisure__list {
+        
+       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .leisure__item { 
+        text-align: center;
+        
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 33%;
+        
+        width: 260px;
+        
+        &--lodging {
+            order: 1;
+        }
+
+        &--souvenirs {
+          order: 3;
+        }
+
+        &--food {
+           order: 2;
+        }
+    }
+    
+
+    
+    .leisure__description > br:nth-child(2) {
+      display: none;
+    }
+    
+    .leisure__title {
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+.leisure__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @litle-text;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 160px;
+    }
+    
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
