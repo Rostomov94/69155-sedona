@@ -11,20 +11,23 @@
           <div class="page-wrapper">        <!--Обвертка-->
               
               <nav class="nav header__nav">    <!--Блок, header__nav Микс для позиционированя-->
+                  <button class="nav__toggle-close" type="button">закр</button>
+                  
                     <ul class="nav__list"> <!--Блок, header__list Микс для позиционированя-->
-                        <button class="nav__toggle-close" type="button">закр</button>
-                       <li class="nav__list-item nav__list-item--active"> <!--Элемент и модификатор элемента -->
+                        
+                       <li class="nav__list-item nav__list-item--one nav__list-item--active"> <!--Элемент и модификатор элемента -->
                          <a href="#">Главная</a>
                        </li>
-                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                       <li class="nav__list-item nav__list-item--two"> <!--Элемент и модификатор элемента -->
                          <a href="#">Фото и видео</a>
                        </li>
-                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item nav__list-item--three"> <!--Элемент и модификатор элемента -->
                          <a href="#">Форма отзыва</a>
                         </li>
-                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item nav__list-item--four"> <!--Элемент и модификатор элемента -->
                          <a href="#">HTML academy</a>
                         </li>
+                        
                     </ul>
               </nav>
               
@@ -54,16 +57,16 @@
         </div>   
 
         <div class="information main__information">
-                <h2 class="information__intro">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
-                <p class="information__info">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
+                <h2 class="information__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <p class="information__info">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
             
         <div class="city-info main__city-info">
-            <div class="city-info__block">
-                <h2 class="city-info__title">Настоящий<br> Городок</h2>
+            <div class="city-info__block"> 
+                <h2 class="city-info__title">Настоящий Городок</h2>
                 <p class="city-info__number">&mdash;№1&mdash;</p>
-                <p class="city-info__description">Седона не атракцион для туристов,<br> там течет своя жизнь!</p>
-            </div>
+                <p class="city-info__description">Седона — не аттракцион для туристов, там течет своя жизнь!</p>
+           </div> 
             <img class="city-info__img" src="img/main-city-mobile@1x.jpg" alt="Отель">
         </div>
             
@@ -73,17 +76,17 @@
                 <li class="leisure__item leisure__item--lodging">
                     <!--<img class="leisure__img leisure__img--life" src="source/img/icon-house.svg" alt="Жилье">-->
                     <h2 class="leisure__title">Жилье</h2>
-                    <p class="leisure__description">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+                    <p class="leisure__description leisure__description--lodging">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="leisure__item leisure__item--souvenirs">
                     <!--<img  class="leisure__img leisure__img--suv" src="source/img/icon-gift.svg" alt="Сувениры">-->
                     <h2 class="leisure__title">Сувениры</h2>
-                    <p class="leisure__description">Не только китайского, но и<br> местного производства!</p>
+                    <p class="leisure__description leisure__description--souvenirs">Не только китайского, но и местного производства!</p>
                 </li>
                 <li class="leisure__item leisure__item--food">
                     <!--<img  class="leisure__img leisure__img--food" src="source/img/icon-burger.svg" alt="Еда">-->
                     <h2 class="leisure__title">Еда</h2>
-                    <p class="leisure__description">Всегда заказывайте<br> фирменный бургер, Вы не<br> разочаруетесь!</p>
+                    <p class="leisure__description leisure__description--food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </li>
             </ul>
         </div>
@@ -91,9 +94,11 @@
             
         <div class="city-info main__city-info">
             <div class="city-info__block city-info__block--devil-bridge">
-                <h2 class="city-info__title">Там есть Мост дьявола</h2>
-                <p class="city-info__number">&mdash;№2&mdash;</p>
-                <p class="city-info__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                
+                <h2 class="city-info__title city-info__title--devil-bridge">Там есть Мост дьявола</h2>
+                <p class="city-info__number city-info__number--devil-bridge">&mdash;№2&mdash;</p>
+                <p class="city-info__description city-info__description--devil-bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                
             </div>
             <img class="city-info__img" src="img/photo-bridge-mobile@1x.jpg" alt="Каньон">
         </div>
@@ -101,34 +106,36 @@
             
 
         <div class="reason main__reason">  
-            <div class="reason-block">
-                <h2 class="reason__title">Небольшая площадь</h2>    
-                <p class="reason__number">&mdash;№3&mdash;</p>
-                <p class="reason__description">Все интересные места находятся<br> очень близко</p> 
-            </div>
-        </div>
             
-        <div class="reason main__reason">
             <div class="reason-block">
-                <h2 class="reason__title">Красивая дорога</h2>   
-                <p class="reason__number">&mdash;№4&mdash;</p>
-                <p class="reason__description">Ехать в Седону из Лас-вегаса<br> совсем не скучно!</p>
+                <h2 class="reason__title reason__title--area">Небольшая площадь</h2>    
+                <p class="reason__number reason__number--area">&mdash;№3&mdash;</p>
+                <p class="reason__description reason__description--area">Все интересные места находятся очень близко</p> 
             </div>
-        </div>
             
-        <div class="reason main__reason"> 
+        
+            
             <div class="reason-block">
-                <h2 class="reason__title">Мало туристов</h2> 
-                <p class="reason__number">&mdash;№5&mdash;</p>
-                <p class="reason__description">Большинство едет в гранд каньон<br>и толпится там</p>
+                <h2 class="reason__title reason__title--road">Красивая дорога</h2>   
+                <p class="reason__number reason__number--road">&mdash;№4&mdash;</p>
+                <p class="reason__description reason__description--road">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
             </div>
+            
+        
+            
+            <div class="reason-block">
+                <h2 class="reason__title reason__title--tourists">Мало туристов</h2> 
+                <p class="reason__number reason__number--tourists">&mdash;№5&mdash;</p>
+                <p class="reason__description reason__description--tourists">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+            
         </div>
             
             
             
         <div class="hotel-search main__hotel-search">
             <h2 class="hotel-search__title">Заинтересовались?</h2>
-            <p class="hotel-search__description">Укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br>  предложения гостиниц в седоне</p>
+            <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             
             <button class="hotel-search__button">найти гостиницу</button>
             
@@ -145,6 +152,7 @@
         <footer class="footer">
             <div class="page-wrapper">
                 
+              <div class="footer__block">  
                 <div class="hash footer__hash">
                     <h3 class="hash__text">#VisitSedona</h3>
                 </div>
@@ -158,6 +166,7 @@
                 <div class="develop footer__develop">
                     <p class="develop__text">Разработано<img class="develop__icon" src="#"></p>
                 </div>
+            </div>  
                 
             </div>
         </footer>

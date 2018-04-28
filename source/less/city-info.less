@@ -1,15 +1,17 @@
 
 .city-info {
+    background-color: @sedona-blue;
     
+    display: flex;
+    justify-content: space-between;
 }
 
 .city-info__img {
-    width: 320px;
-    display: block;
+    
 }
 
 .city-info__block {
-   background-color: @sedona-blue;
+   
 }
 
 .city-info__title {
@@ -18,11 +20,11 @@
     color: white;
     text-transform: uppercase;
     text-align: center;
-    
+    margin: auto;
     padding-bottom: 16.5px;
     padding-top: 42px;
     
-
+    
 }
 
 .city-info__number {
@@ -44,61 +46,43 @@
     text-align: center;
     padding-bottom:  44.5px;
     
-    &--briefly { 
-        color: @litle-text;
-        border-bottom: 1px solid #d6d6d6;
-        margin-right: 36px;
-        margin-left: 36px;
-    }
-    
     &--last {
         border-bottom: none;
     }
 }
 
 @media screen and (min-width: @tablet-width) {  //768px
-    
-    .city-info {
-    
-        &--briefly {
-            
-        } 
-    }
-    
-    
     .city-info__img {
-        
-        width: 510px;
+        flex-basis: 66%;
     }
     
     
     .city-info__title {
         font-size: 21px;
         line-height: 26px;
-
-        &--briefly {
-            
-
+        width: 122px;
+        
+        &--devil-bridge {
+            width: 151px;
+            margin: auto;
+        }
+    }
+    
+    .city-info__description { 
+        margin: auto;
+        width: 178px;
+        &--devil-bridge { 
+            margin: auto;
+            width: 178px;
         }
     }
     
     
     .city-info__block {
-        width: 225px;
-        padding-right: 65px;
-        padding-left: 66px;
+        flex-basis: 33%;
         
     &--devil-bridge {
-        order: 2;     
-    }
-        
-    
-    &--briefly {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-        
+        order: 2;    
     }
     
 }
@@ -107,6 +91,35 @@
 
 @media screen and (min-width: @desktop-width) { //1200px
     
+    .city-info__img {
+       
+        
+    }
+    
+    .city-info__title {
+        font-size: 21px;
+        line-height: 26px;
+        
+        margin: auto;
+        width: 123px;
+        
+        &--devil-bridge {
+            width: 151px;
+            
+        }
+    }
+    
+    .city-info__description { 
+        
+        
+        width: 282px;
+        margin: auto;
+        
+        &--devil-bridge { 
+            
+            width: 271px;
+        }
+    }
     
 }
 

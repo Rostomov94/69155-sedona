@@ -4,33 +4,39 @@
         <meta charset="utf-8">
         <title>Седона</title>
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header class="page-header">
+        
+        
+        <header class="header">
           <div class="page-wrapper">        <!--Обвертка-->
               
               
               <nav class="nav header__nav">    <!--Блок, header__nav Микс для позиционированя-->
-                    <ul class="nav__list header__list"> <!--Блок, header__list Микс для позиционированя-->
-                        <button class="nav__toggle-close" type="button">закр</button>
-                       <li class="nav__list-item nav__list-item--active"> <!--Элемент и модификатор элемента -->
+                  
+                  <button class="nav__toggle-close" type="button">закр</button>
+                  
+                    <ul class="nav__list"> <!--Блок, header__list Микс для позиционированя-->
+                       <li class="nav__list-item nav__list-item--one nav__list-item--active"> <!--Элемент и модификатор элемента -->
                          <a href="#">Главная</a>
                        </li>
-                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                       <li class="nav__list-item nav__list-item--two"> <!--Элемент и модификатор элемента -->
                          <a href="#">Фото и видео</a>
                        </li>
-                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item nav__list-item--three"> <!--Элемент и модификатор элемента -->
                          <a href="#">Форма отзыва</a>
                         </li>
-                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item nav__list-item--four"> <!--Элемент и модификатор элемента -->
                          <a href="#">HTML academy</a>
                         </li>
                     </ul>
+                  
               </nav>
               
               
                   <div class="logo header__logo">                           <!--header__logo Микс для позиционирования -->
-                        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип меню">
+                        <img class="logo__img" src="#" alt="Логотип меню"> <!--img/logo-sedona-mobile.svg -->
                   </div>
               
               
@@ -39,29 +45,28 @@
                     <button class="button__open-toggle" type="button">откр</button>
                   </div>
               
-              
-            
           </div>
       </header>
+        
+        
       <main class="main">
         <div class="page-wrapper">
             
             <div class="greetings main__greetings">                   <!--main__greetings Микс для позиционирования-->
                   <div class="greetings__img">
-                    <img class="greetings__text-sedona-index" src="img/text-sedona.svg">
+                  <!--  <img class="greetings__text-sedona-index" src="img/text-sedona.svg"> -->
                 </div>
             </div>
             
-            <form class="form main__form">
-                
-                
             <div class="sentence main__sentence">
                 <h2 class="sentence__intro">Оставьте свой отзыв</h2>    
                 
-                <p class="sentence__info">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br> посещенных вами<br> достопримечательностях</p>
+                <p class="sentence__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </div>
-                
-                
+            
+            
+            <form class="form main__form">
+                 
             <div class="name-form main__name-form">
                     <h2 class="name-form__title">Представьтесь:</h2> 
                 
@@ -87,29 +92,29 @@
                 
             <div class="contacts-info main__contacts-info">
                 <h2 class="contacts-info__title">Контактная информация:</h2>     
-                
-                <p class="contacts-info__form">
-                    <label class="contacts-info__text" for="contacts-form-tel">Контактный телефон<sup>*</sup>:</label>
-                    <input class="contacts-info__field" id="contacts-form-tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
-                    
-                    <span class="contacts-info__icon">
-                            <svg width="5" height="5">
-                            </svg> 
-                        
-                    </span>
-                </p>
-                
-                <p class="contacts-info__form">
-                    <label class="contacts-info__text" for="contacts-form-mail">Электронная почта<sup>*</sup>:</label><br>
-                        
-                    <input class="contacts-info__field" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
-                    
-                    <span class="contacts-info__icon">
-                            <svg width="5" height="5">
-                            </svg> 
-                    </span>
-                </p>
-                
+                    <div class="contacts-info__input-block">
+                        <p class="contacts-info__form">
+                            <label class="contacts-info__text" for="contacts-form-tel"><span class="contacts-info__span">Контактный</span> телефон<sup>*</sup>:</label>
+                            <input class="contacts-info__field" id="contacts-form-tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
+
+                            <span class="contacts-info__icon">
+                                    <svg width="5" height="5">
+                                    </svg> 
+
+                            </span>
+                        </p>
+
+                        <p class="contacts-info__form">
+                            <label class="contacts-info__text" for="contacts-form-mail">Электронная почта<sup>*</sup>:</label>
+
+                            <input class="contacts-info__field" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
+
+                            <span class="contacts-info__icon">
+                                    <svg width="5" height="5">
+                                    </svg> 
+                            </span>
+                        </p>
+                    </div>
             </div>  
                 
                 
@@ -138,30 +143,35 @@
                 
             <div class="attraction main__attraction">
                 <h2 class="attraction__title">Посещенные достопримечательности:</h2> 
-                
-                <p class="attraction__radio-item">
-                    <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="bridge"/>
-                    <label class="attraction__checkbox-text" for="bridge">Мост Дьявола</label>
-                </p>
-                <p class="attraction__radio-item">
-                    <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="mounth"/>
-                    <label class="attraction__checkbox-text" for="mounth">Гора-Колокол</label>
-                </p>
-                <p class="attraction__radio-item">
-                    <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="park"/>
-                    <label class="attraction__checkbox-text" for="park">Слайд-парк</label>
-                </p>
-                <p class="attraction__radio-item attraction__radio-item--last">
-                    <input class="attraction__checkbox" type="checkbox" name="" id="rock"/>
-                    <label class="attraction__checkbox-text" for="rock">Красные скалы</label>
-                </p>
-                
+                <div class="attraction__radio-block">
+                    <p class="attraction__radio-item">
+                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="bridge"/>
+                        <label class="attraction__checkbox-text" for="bridge">Мост Дьявола</label>
+                    </p>
+                    <p class="attraction__radio-item">
+                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="mounth"/>
+                        <label class="attraction__checkbox-text" for="mounth">Гора-Колокол</label>
+                    </p>
+                    <p class="attraction__radio-item">
+                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="park"/>
+                        <label class="attraction__checkbox-text" for="park">Слайд-парк</label>
+                    </p>
+                    <p class="attraction__radio-item attraction__radio-item--last">
+                        <input class="attraction__checkbox" type="checkbox" name="" id="rock"/>
+                        <label class="attraction__checkbox-text" for="rock">Красные скалы</label>
+                    </p>
+                </div>
             </div> 
+                
+                
             <div class="emotions main__emotions">
                 <h2 class="emotions__title">Опишите свои эмоции:</h2>   <!--main__title микс для общего стиля-->
                 <textarea class="emotions__text-area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
                 <button class="emotions__button">Отправить отзыв</button>
-            </div>     
+                <p class="emotions__required"> *— Обязательные поля</p>
+            </div>    
+                
+                
             </form>
             </div>
         </main>
@@ -170,23 +180,23 @@
         <footer class="footer">
             <div class="page-wrapper">
                 
-                
-                <div class="hash footer__hash">
-                    <h3 class="hash__text">#VisitSedona</h3>
+               <div class="footer__block"> 
+                    <div class="hash footer__hash">
+                        <h3 class="hash__text">#VisitSedona</h3>
+                    </div>
+
+
+                    <div class="soc-button footer__soc-button">
+                        <a class="footer__social-btn footer__social-btn--twitter" href="#">twitter</a>
+                        <a class="footer__social-btn footer__social-btn--facebook" href="#">facebook</a>
+                        <a class="footer__social-btn footer__social-btn--youtube" href="#">youtube</a>
+                    </div>
+
+
+                    <div class="develop footer__develop">
+                        <p class="develop__text">Разработано<img class="develop__icon" src="" alt="htmlacademy"></p>
+                    </div>
                 </div>
-                
-                
-                <div class="soc-button footer__soc-button">
-                    <a class="footer__social-btn footer__social-btn--twitter" href="#">twitter</a>
-                    <a class="footer__social-btn footer__social-btn--facebook" href="#">facebook</a>
-                    <a class="footer__social-btn footer__social-btn--youtube" href="#">youtube</a>
-                </div>
-                
-                
-                <div class="develop footer__develop">
-                    <p class="develop__text">Разработано<img class="develop__icon" src="" alt="htmlacademy"></p>
-                </div>
-                
                 
             </div>
         </footer>

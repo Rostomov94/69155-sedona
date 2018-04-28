@@ -51,7 +51,7 @@
 @media screen and (min-width: @tablet-width) {  //768px
     .reason {
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: nowrap; 
         justify-content: space-around;
         flex-basis: 33%;
     }
@@ -61,13 +61,7 @@
         
     }
     
-    .reason:nth-child() {
-        
-    }
     
-    .reason:nth-child() {
-        
-    }
 
 .reason__title {
    font-size: 18px;
@@ -78,6 +72,23 @@
     
     padding-bottom: 16.5px;
     padding-top: 42px; 
+    
+    
+    
+    &--area {
+        margin-right: 36px;
+        margin-left: 36px;
+    }
+    
+    &--road {
+        margin-right: 51px;
+        margin-left: 51px;
+    }
+    
+    &--tourists {
+        margin-right: 71px;
+        margin-left: 71px;
+    }
 }
 
 .reason__number {
@@ -101,6 +112,23 @@
     border-bottom: none;
     margin-right: 36px;
     margin-left: 36px;
+    
+    &--area {
+        margin-right: 36px;
+        margin-left: 36px;
+    }
+    
+    &--road {
+        margin-right: 48px;
+        margin-left: 57px;
+    }
+    
+    &--tourists {
+        margin-right: 63px;
+        margin-left: 63px;
+    }
+    
+    
 }
 
 

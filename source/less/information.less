@@ -11,6 +11,9 @@
     text-align: center;
     
     padding-bottom: 42px;
+    
+    padding-left: 33px;
+    padding-right: 32px;
 }
 
 .information__info {
@@ -20,7 +23,8 @@
     text-transform: uppercase;
     text-align: center;
     
-    
+    padding-left: 33px;
+    padding-right: 32px;
 }
 
 
@@ -30,10 +34,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
+        
     }
    
     
     .information__intro {
+        padding-left: 165px;
+        padding-right: 164px;
+        
         
     }
     
@@ -42,18 +51,19 @@
     }
     
     
-    .information__intro > br:nth-child(1) {
-      display: none;
-    }
-    
-    .information__info > br:nth-child(1) {
-      display: none;
-    }
+    width: 450px;
     
    
 }
 
 @media screen and (min-width: @desktop-width) { //1200px
     
+    
+    .information__intro {
+        width: 450px;
+        margin: auto;
+        
+        
+    }
     
 }

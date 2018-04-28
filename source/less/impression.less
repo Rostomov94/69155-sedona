@@ -18,9 +18,7 @@
     margin-left: 20px;
 }
 
-.impression__radio-button {
-    
-}
+
 
 .impression__radio-text {
     font-size: 18px;
@@ -30,4 +28,43 @@
     font-weight: bold;
     
     padding-left: 27px;
+}
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .impression {
+        display: flex;
+        flex-direction: column;
+        
+        border-right: 1px solid #e5e5e5;
+        
+        flex-basis: 50%;
+        order: -1;
+        
+        border-bottom: 0;
+    }
+    
+    .impression__radio-item {
+        padding-bottom: 52px;
+        text-align: left;
+        margin-left: 67px;
+    }
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .impression {
+        display: flex;
+        flex-direction: column;
+        
+        width: 400px;
+        
+        flex-basis: 400px;
+        order: -1;
+    }
+    
 }

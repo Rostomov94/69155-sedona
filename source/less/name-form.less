@@ -1,6 +1,8 @@
 .name-form {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 5px;
+    
+    
 }
 
 .name-form__title {
@@ -42,7 +44,49 @@
 }
 
 
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .name-form__title {
+        padding-bottom: 29px;
+    }
+    
+    .name-form {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 5px;
 
+        border-bottom: 0;
+    }
+    
+    
+    
+    .name-form {
+    
+        
+        flex-basis: 49%;
+       flex-direction: row;
+        
+       // flex-basis: 50%;
+        
+    }
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .name-form {
+    
+        
+        flex-basis: 400px;
+       
+        
+       // flex-basis: 50%;
+        
+    }
+    
+    
+}
 
 
 
