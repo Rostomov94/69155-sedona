@@ -22,11 +22,39 @@
 }
 
 .greetings__text-sedona-index {
-    width: 280px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 412px;
-    left: 813px;
+    //*width: 280px;
+    //*background-position: 50% 50%;
+    //*background-repeat: no-repeat;
+    //*position: absolute;
+    //*top: 412px;
+    //*left: 813px;
 }
 
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .greetings {
+        
+        display: block;
+   
+    
+    
+    
+    }
+
+    .greetings__img {
+         
+        width: 100%;
+    }
+   
+   
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    .greetings__img {
+         
+        min-width: 1200px;
+    }
+    
+}

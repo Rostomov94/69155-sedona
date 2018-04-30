@@ -1,11 +1,22 @@
 .nav {
-    margin: 0;
-    padding: 0;
+   
 }
 
 .nav__list {
     padding: 0;
     text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav--closed {
+    display: none;
+}
+
+.nav--open {
+    display: flex;
 }
 
 .nav__list-item {
@@ -40,7 +51,179 @@
 
 .nav__toggle-close {
     position: absolute;
-    top: 20px;
-    left: 1054px;
+    right: 0px; //79
+    
+    width: 64px;
+    height: 56px;
+    
+    cursor: pointer;
+    z-index: 10;
 }
+
+.nav__toggle-close svg{
+    
+   position: absolute;
+   top: 29%;
+    right: 30%;
+    fill: white;
+    stroke: white;
+    
+}
+
+
+.nav__toggle-open {
+    
+   position: absolute;
+    right: 0px; //79
+    width: 64px;
+    height: 56px;
+    
+    cursor: pointer;
+    z-index: 10;
+ 
+}
+
+.nav__toggle-open svg{
+    
+   position: absolute;
+   top: 29%;
+    right: 30%;
+    fill: #81b3d2;
+    stroke: #81b3d2;
+}
+
+.nav__toogle-open-svg {
+     
+}
+
+
+
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .nav {
+        
+    }
+
+    .nav__toggle-open {
+        display: none;
+    }
+    
+    .nav__toggle-close {
+        display: none;
+    }
+    
+    
+    
+    .nav__list {
+        padding: 0;
+        text-decoration: none;
+        
+        margin-right: 26px;
+        margin-left: 49px;
+        
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .nav__list-item {
+        font-size: 14px;
+        line-height: 26px;
+        background-color: white;
+        border-bottom: none;
+        border-top: none;
+        max-width: 768px;
+        padding-bottom: 21px;
+        padding-top: 21px;
+        
+        &--active {
+
+        }
+        
+        &--one {
+            
+        }
+
+        &--two {
+            margin-left: 77px;
+        }
+
+        &--three {
+            margin-left: 209px;
+            
+        }
+        
+        &--four {
+            margin-left: 49px;
+        }
+    }
+    
+    
+
+    .nav__list-item a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .nav__list {
+        padding: 0;
+        text-decoration: none;
+        
+        margin-right: 69px;
+        margin-left: 90px;
+        
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    
+    .nav__list-item {
+        
+        max-width: 768px;
+        
+        
+        &--active {
+
+        }
+        
+        &--one {
+            
+        }
+
+        &--two {
+            margin-left: 162px;
+        }
+
+        &--three {
+            margin-left: 380px;
+            
+        }
+        
+        &--four {
+            margin-left: 137px;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
 

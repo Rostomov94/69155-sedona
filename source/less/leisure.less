@@ -1,12 +1,14 @@
 .leisure {
     background-color: white;
-    
-    
 }
 
 .leisure__list {
     list-style-type: none;
-   
+    
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 .leisure__item {
@@ -14,7 +16,10 @@
     padding-bottom: 22.5px;
     
     &--lodging {
-       /** background: url(../img/icon-house.svg) no-repeat; **/
+       /** background: url(../img/icon-house.svg) no-repeat; 
+        background-position: 20px 15px;**/
+        
+        
     }
     
     &--souvenirs {
@@ -30,8 +35,8 @@
     }
 }
 
-.leisure__img {
-    display: inline;
+.leisure__item__svg {
+    
 }
 
 .leisure__title {
@@ -56,3 +61,139 @@
     
     
 }
+
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .leisure__list {
+        
+       
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+    }
+    
+    .leisure__item { 
+        text-align: center;
+        
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 33%;
+        
+        width: 260px;
+        
+        &--lodging {
+            order: 1;
+        }
+
+        &--souvenirs {
+          order: 3;
+        }
+
+        &--food {
+           order: 2;
+        }
+    }
+
+    .leisure__title {
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 30px;
+        
+        padding-right: ;
+        padding-left: ;
+    }
+
+.leisure__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @litle-text;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    
+    
+    
+    &--lodging {
+        height: 53px;
+        
+        padding-right: 49px;
+        padding-left: 49px;
+    }
+    
+    &--souvenirs {
+       padding-right: 43px;
+        padding-left: 44px;
+        
+    }
+    
+    &--food {
+        padding-right: 53px;
+        padding-left: 52px;
+        
+    }
+    
+    }
+    
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .leisure__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @litle-text;
+    text-align: center;
+    margin: 0 auto;
+    
+    
+    &--lodging {
+        height: 53px;
+        
+        padding-right: 49px;
+        padding-left: 49px;
+    }
+    
+    &--souvenirs {
+       padding-right: 43px;
+        padding-left: 44px;
+        
+        width: 214px;
+        
+    }
+    
+    &--food {
+        padding-right: 53px;
+        padding-left: 52px;
+        
+    }
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

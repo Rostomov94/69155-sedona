@@ -1,5 +1,25 @@
 .page-wrapper {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0;
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    
+        position: relative;
+        z-index: 4;
+}
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .page-wrapper {
+        width: @tablet-width;
+    }
+   
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .page-wrapper {
+        width: @desktop-width;
+        
+        
+    }
 }

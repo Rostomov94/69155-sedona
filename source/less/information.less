@@ -1,5 +1,6 @@
 .information {
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .information__intro {
@@ -10,6 +11,9 @@
     text-align: center;
     
     padding-bottom: 42px;
+    
+    padding-left: 33px;
+    padding-right: 32px;
 }
 
 .information__info {
@@ -19,5 +23,47 @@
     text-transform: uppercase;
     text-align: center;
     
+    padding-left: 33px;
+    padding-right: 32px;
+}
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+    }
+   
+    
+    .information__intro {
+        padding-left: 165px;
+        padding-right: 164px;
+        
+        
+    }
+    
+    .information__info {
+           
+    }
+    
+    
+    width: 450px;
+    
+   
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    
+    .information__intro {
+        width: 450px;
+        margin: auto;
+        
+        
+    }
     
 }

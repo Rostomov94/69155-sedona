@@ -4,6 +4,7 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
+
 .photo-block__img {
     display: block;
     padding-bottom: 22px;
@@ -11,6 +12,10 @@
     
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.photo-block__footer {
+    
 }
 
 .photo-block__title {
@@ -49,3 +54,149 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
+
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .photo-block {
+        display: flex;
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+    .photo-block__square {
+        
+        background-color: #eaeaea;
+        
+        
+        &--one {
+            flex-basis: 100%;
+            margin: auto;
+            width: 648px;
+            
+        }
+
+        &--two {
+            flex-basis: 50%;
+            width: 324px;
+            
+        }
+
+        &--three {
+            flex-basis: 50%;
+            width: 324px;
+        }
+
+        &--four {
+            flex-basis: 50%;
+            width: 324px;
+        }
+        
+        
+    }
+    
+    .photo-block__footer {
+        
+    }
+    
+    .photo-block__title {
+        padding-bottom: 6px;
+
+        
+    }
+    
+    .photo-block__author {
+        
+       
+    }
+    
+    .photo-block__img {
+        
+    }
+
+    .photo-block__views {
+        
+    }
+
+   
+   
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .photo-block {
+        display: flex;
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        
+        padding: 0;
+    }
+    
+    .photo-block__square {
+        
+        background-color: #eaeaea;
+        
+        
+        &--one {
+            flex-basis: 100%;
+            margin: auto;
+            width: 648px;
+            
+        }
+
+        &--two {
+            flex-basis: 33%;
+            width: 324px;
+            
+        }
+
+        &--three {
+            flex-basis: 33%;
+            width: 324px;
+        }
+
+        &--four {
+            flex-basis: 33%;
+            width: 324px;
+        }
+        
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

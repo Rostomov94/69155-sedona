@@ -1,17 +1,45 @@
-.header {
-   font-family: 'PT Sans', sans-serif;
-    
-}
-
-.header__nav {
-    
-}
 
 .header__logo {
     
 }
 
 .header__button {
-    
+   
 }
 
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .header__logo {
+        position: absolute;
+    }
+
+    .header__button {
+
+    }
+   
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .header__nav {
+        
+        
+    }
+
+    .header__logo {
+
+    }
+
+    .header__button {
+
+    }
+    
+}

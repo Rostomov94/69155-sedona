@@ -1,5 +1,7 @@
 .emotions {
     text-align: center;
+    
+    
 }
 
 .emotions__title {
@@ -39,3 +41,105 @@
     text-align: center;
     margin-bottom: 40px;
 }
+
+.emotions__required {
+    font-size: 14px;
+    line-height: 26px;
+    display: none;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .emotions {
+        width: 648px;
+    }
+    
+    .emotions__text-area {
+        background-color: @sedona-form;
+        width: 590px;
+        height: 160px;
+        padding-left: 22px;
+        
+        padding-top: 22px;
+        color: black;
+        resize: none;
+        border: none;
+        margin-bottom: 51px; 
+    }
+    
+    .emotions__button {
+        flex-basis: 50%;
+        
+        padding-top: 16.6px;
+        padding-bottom: 22px;
+        padding-right: 75px;
+        padding-left: 65px;
+        
+        height: 56px;
+        
+        margin-bottom: 40px;
+        
+        float: left;
+    
+    }    
+
+    .emotions__required {
+        display: inline;
+        float: right;
+        padding-top: 10px;
+    }
+        
+
+    
+   
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    .emotions {
+        width: 960px;
+    }
+    
+    .emotions__text-area {
+        background-color: @sedona-form;
+        width: 903px;
+        height: 160px;
+        padding-left: 22px;
+        
+        padding-top: 22px;
+        color: black;
+        resize: none;
+        border: none;
+        margin-bottom: 51px; 
+    }
+    
+    .emotions__button {
+        flex-basis: 50%;
+        
+        padding-top: 16.6px;
+        padding-bottom: 22px;
+        padding-right: 75px;
+        padding-left: 65px;
+        
+        height: 56px;
+        
+        margin-bottom: 40px;
+        
+        float: left;
+    
+    }    
+
+    .emotions__required {
+        display: inline;
+        float: right;
+        padding-top: 10px;
+    }
+        
+    
+}
+
+

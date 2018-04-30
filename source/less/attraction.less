@@ -1,6 +1,8 @@
 .attraction {
     border-bottom: 1px solid #e5e5e5;
     text-align: center;
+    
+    
 }
 
 .attraction__title {
@@ -25,12 +27,80 @@
     }
 }
 
-.attraction__checkbox {
-    
-}
+
 
 .attraction__checkbox-text {
     padding-left: 55px;
     font-weight: bold;
 }
 
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    
+    
+    .attraction {
+        display: flex;
+        flex-direction: column;
+        
+        flex-basis: 100%;
+        
+        border-bottom: 0;
+    }
+    
+    .attraction__radio-block {
+        width: 440px;
+        margin: auto;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .attraction__title {
+        width: 280px;
+        margin: auto;
+    }
+    
+    .attraction__radio-item {
+       
+    &--last {
+        margin-left: 42px;
+    }
+        
+    }
+}
+
+
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+    
+    .attraction__radio-item {
+        
+        margin-left: 71px;
+    }
+    
+    .attraction__checkbox-text {
+        padding-left: 25px;
+        font-weight: bold;
+    }
+
+    .attraction__radio-block {
+        width: 862px;
+        margin: auto;
+        
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .attraction__radio-item {
+       
+    &--last {
+        margin-left: 42px;
+    }
+        
+    }
+    
+    
+}
