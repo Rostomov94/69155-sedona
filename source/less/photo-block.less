@@ -12,6 +12,8 @@
     
     margin-right: 20px;
     margin-left: 20px;
+    
+    
 }
 
 .photo-block__footer {
@@ -29,17 +31,19 @@
     
     margin-right: 20px;
     margin-left: 20px;
+    
+    width: 160px;
 }
 
 .photo-block__author {
     font-size: 14px;
     line-height: 24px;
     color: @litle-text;
-    
+    text-transform: none;
     padding-bottom: 23px;
     
     margin-right: 20px;
-    margin-left: 20px;
+    
     
 }
 
@@ -80,44 +84,88 @@
             margin: auto;
             width: 648px;
             
+            background-color: #f2f2f2;
+            
         }
 
         &--two {
             flex-basis: 50%;
             width: 324px;
             
+            background-color: #f2f2f2;
+            
         }
 
         &--three {
             flex-basis: 50%;
             width: 324px;
+            
+            background-color: #eaeaea;
         }
 
         &--four {
             flex-basis: 50%;
             width: 324px;
+            
+            background-color: #f2f2f2;
         }
         
         
     }
     
     .photo-block__footer {
+        display: flex;
+        
+        justify-content: space-between;
+        
         
     }
     
     .photo-block__title {
-        padding-bottom: 6px;
+        padding-bottom: 22px;
+        
+        width: 175px;
+        
+        &--one {
+            
+            
+        }
 
+        &--two {
+            width: 185px;
+            
+        }
+
+        &--three {
+            width: 150px;
+        }
+
+        &--four {
+            width: 135px;
+        }
+        
         
     }
     
     .photo-block__author {
+        margin-left: 0;
         
-       
+        text-transform: none;
+       font-weight: normal;
+
+    
+    
+    
     }
     
     .photo-block__img {
         
+        margin: 0;
+        padding: 0;
+        padding-bottom: 22px;
+        
+        max-width: 100%;
+        height: auto;
     }
 
     .photo-block__views {
@@ -140,6 +188,7 @@
     }
     
     .photo-block__square {
+        justify-content: space-between;
         
         background-color: #eaeaea;
         
@@ -152,7 +201,7 @@
         }
 
         &--two {
-            flex-basis: 33%;
+            flex-basis: 34%;
             width: 324px;
             
         }
@@ -168,6 +217,47 @@
         }
         
         
+    }
+    
+    .photo-block__footer {
+        position: relative;
+        z-index: 10;
+        
+        padding-top: 14px;
+        
+        
+        margin-top: -84px;
+        color: #fff;
+        background-color: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        
+        
+        
+        width: 100%;
+    }
+    
+    .photo-block__img {
+        
+        padding-bottom: 0px;
+        
+        height: 400px;
+    }
+    
+    
+    
+    .photo-block__title {
+        color: white;
+        
+        
+    }
+    
+    .photo-block__author {
+        color: white;
+    
+    }
+    
+    .photo-block__views {
+       color: white; 
     }
     
 }
