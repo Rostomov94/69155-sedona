@@ -1,5 +1,5 @@
 .name-form {
-    border-bottom: 1px solid #e5e5e5;
+    
     padding-bottom: 5px;
     
     
@@ -34,12 +34,31 @@
     width: 172px;
     background-color: @sedona-form;
     color: black;
-    border: none;
+    border: 4px solid @sedona-form;
     padding-left: 20px;
     
     &--first {
         width: 208px;
     }
+    
+        &:hover {
+            background-color: #e5e5e5;
+            border-color: #e5e5e5; 
+        }
+        
+        &:active {
+            background-color: white;
+            
+            border-color: #e5e5e5;
+        }
+        
+        &:focus {
+            background-color: white;
+            outline: none;
+            border-color: #e5e5e5;
+        }
+    
+    
     
 }
 
@@ -50,24 +69,52 @@
         padding-bottom: 29px;
     }
     
+    
     .name-form {
-        border-bottom: 1px solid #e5e5e5;
-        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        
+        
+         padding-bottom: 5px;
+        
+        flex-basis: 49%;  
+    }
+    
+    .name-form__name-field {
+        
+        height: 58px;
+        width: 165px;
+        border: 4px solid @sedona-form;
+        padding-left: 20px;
 
-        border-bottom: 0;
+        &--first {
+            width: 200px;
+        }
+        
+        &:hover {
+            background-color: #e5e5e5;
+            border-color: #e5e5e5; 
+        }
+        
+        &:active {
+            background-color: white;
+            
+            border-color: #e5e5e5;
+        }
+        
+        &:focus {
+            background-color: white;
+            outline: none;
+            border-color: #e5e5e5;
+        }
+
     }
     
-    
-    
-    .name-form {
-    
-        
-        flex-basis: 49%;
-       flex-direction: row;
-        
-       // flex-basis: 50%;
-        
+    .name-form__name {
+        margin-left: 35px;
+        margin-right: 10px;
     }
+
    
 }
 
@@ -75,17 +122,26 @@
 
 @media screen and (min-width: @desktop-width) { //1200px
     
-    .name-form {
-    
+    .name-form__title {
         
-        flex-basis: 400px;
-       
-        
-       // flex-basis: 50%;
+        text-align: left;
         
     }
     
+    .name-form__name {
+        margin-left: 0; 
+        margin-right: 10px;
+    }
     
+    .name-form {
+        width: 430px;
+        
+       // padding-right: 112px;
+        padding-left: 82px;
+        
+        flex-basis: 40%;
+        
+    } 
 }
 
 

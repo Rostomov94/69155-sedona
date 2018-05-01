@@ -23,13 +23,13 @@
                     <ul class="nav__list"> <!--Блок, header__list Микс для позиционированя-->
                         
                        <li class="nav__list-item nav__list-item--one nav__list-item--active"> <!--Элемент и модификатор элемента -->
-                         <a href="#">Главная</a>
+                         <a href="index.html">Главная</a>
                        </li>
                        <li class="nav__list-item nav__list-item--two"> <!--Элемент и модификатор элемента -->
-                         <a href="#">Фото и видео</a>
+                         <a href="photo.html">Фото и видео</a>
                        </li>
                         <li class="nav__list-item nav__list-item--three"> <!--Элемент и модификатор элемента -->
-                         <a href="#">Форма отзыва</a>
+                         <a href="form.html">Форма отзыва</a>
                         </li>
                         <li class="nav__list-item nav__list-item--four"> <!--Элемент и модификатор элемента -->
                          <a href="#">HTML academy</a>
@@ -75,9 +75,9 @@
                 <p class="sentence__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </div>
             
-            
+            <div class="form-wrapper">
             <form class="form main__form">
-                 
+                
             <div class="name-form main__name-form">
                     <h2 class="name-form__title">Представьтесь:</h2> 
                 
@@ -115,11 +115,9 @@
                             </span>
                         </p>
 
-                        <p class="contacts-info__form">
+                        <p class="contacts-info__form contacts-info__form--mail">
                             <label class="contacts-info__text" for="contacts-form-mail">Электронная почта<sup>*</sup>:</label>
-
-                            <input class="contacts-info__field" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
-
+                            <input class="contacts-info__field contacts-info__field--mail" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
                             <span class="contacts-info__icon">
                                     <svg width="5" height="5">
                                     </svg> 
@@ -144,7 +142,7 @@
                      <label class="impression__radio-text" for="bad">Скорее отрицательное</label>
                 </p>
                 
-                <p class="impression__radio-item">
+                <p class="impression__radio-item impression__radio-item--last">
                     <input class="impression__radio-button" type="radio" name="1" value="#" id="not">
                     <label class="impression__radio-text" for="not">Затрудняюсь ответить</label>
                 </p>
@@ -178,13 +176,17 @@
             <div class="emotions main__emotions">
                 <h2 class="emotions__title">Опишите свои эмоции:</h2>   <!--main__title микс для общего стиля-->
                 <textarea class="emotions__text-area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+                
                 <button class="emotions__button">Отправить отзыв</button>
+                
                 <p class="emotions__required"> *— Обязательные поля</p>
             </div>    
                 
                 
             </form>
+                </div>
             </div>
+             
         </main>
         
         
