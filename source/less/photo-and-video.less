@@ -1,6 +1,8 @@
 .photo-and-video {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    
+    margin: auto;
 }
 
 .photo-and-video__title {
@@ -19,17 +21,23 @@
     color: @litle-text;
     
     padding-bottom: 36px;
+    
+    width: 270px;
 }
 
 
 @media screen and (min-width: @tablet-width) { 
+    
+    .photo-and-video__title { 
+        font-size: 30px;   
+    }
+    
     .photo-and-video__info {
         width: 430px;
         margin: auto;
     }
     
     .photo-and-video {
-        
         border-bottom: none;
     }
     

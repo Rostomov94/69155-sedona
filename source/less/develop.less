@@ -1,6 +1,6 @@
 .develop {
-    text-align: center;
-    
+   // text-align: center;
+    margin: auto;
 }
 
 .develop__text {
@@ -9,9 +9,56 @@
     text-transform: uppercase;
     color: black;
     
+    float: left;
     
+    padding-right: 12px;
 }
 
 .develop__icon {
+    height: 100%;
+    
+    width: 27;
+    height: 34;
+}
+
+
+
+.develop__icon svg {
+
+        &:hover {
+            fill: #81b3d2;
+            stroke: #81b3d2;
+        }
+        
+        &:active {
+            opacity: 0.6;
+            
+            fill: #b2b2b2;
+            stroke: #b2b2b2;
+        }
+        
+}
+
+.develop__text {
+    padding-top: 2px;
+}
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    
+    .develop {
+       // text-align: center;
+        margin: 0;
+    }
+
+    
+    .develop__text {
+        float: left;
+        
+
+    }
+    
+    
+    
     
 }

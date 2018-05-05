@@ -1,5 +1,5 @@
 .attraction {
-    border-top: 1px solid red;
+    border-top: 1px solid #dbdbdb;
     text-align: center;
     
     
@@ -28,12 +28,74 @@
         padding-bottom: 48px;
     }
 }
+ 
+.attraction__checkbox {     //Кнопка    input
+    position: absolute;
+      z-index: -1;
+      opacity: 0;
+      margin: 10px 0 0 20px;
+}
 
-
-
-.attraction__checkbox-text {
+.attraction__checkbox-text {       //Текст  label
     padding-left: 55px;
     font-weight: bold;
+    
+}
+
+.attraction__checkbox + .attraction__checkbox-text {
+    position: relative;
+    padding: 12px 0 0 75px;
+    cursor: pointer;
+}
+
+.attraction__checkbox + .attraction__checkbox-text:before {
+    content: '';
+    
+    
+      position: absolute;
+      top: -4px;
+      left: 0;
+      right: 2px;
+    
+      width: 56px;
+      height: 56px;
+      border-radius: 4px;
+      background: #f2f2f2;
+    
+    
+}
+
+.attraction__checkbox + .attraction__checkbox-text:after {
+  content: '';
+  position: absolute;
+    transition: .2s;
+    
+  top: -2px;
+  left: 2px;
+    
+  width: 26px;
+  height: 20px;
+    
+  
+  
+}
+
+.attraction__checkbox:checked + .attraction__checkbox-text:before {
+    background: #f2f2f2;
+    
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/icon-tick.svg);
+      background-size: 25px 26px;
+}
+
+.attraction__checkbox-text:hover:before {
+    background: #e5e5e5;
+}
+
+.attraction__checkbox-text:active:before {
+    background: #d5d5d5;
+    opacity: 0.4;
 }
 
 
@@ -60,7 +122,7 @@
     }
     
     .attraction__title {
-        
+        font-size: 21px;
         
         background-color: white;
         width: 350px;

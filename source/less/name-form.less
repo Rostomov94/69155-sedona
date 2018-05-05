@@ -23,7 +23,7 @@
 }
 
 .name-form__name {
-    margin-left: 20px;
+   // margin-left: 20px;
     margin-right: 10px;
 }
 
@@ -31,14 +31,14 @@
     font-size: 18px;
     line-height: 26px;
     height: 58px;
-    width: 172px;
+    width: 165px;
     background-color: @sedona-form;
     color: black;
     border: 4px solid @sedona-form;
     padding-left: 20px;
     
     &--first {
-        width: 208px;
+        width: 200px;
     }
     
         &:hover {
@@ -58,7 +58,10 @@
             border-color: #e5e5e5;
         }
     
-    
+        &::placeholder {
+            color: black;
+            font-weight: bold;
+        }
     
 }
 
@@ -67,6 +70,7 @@
     
     .name-form__title {
         padding-bottom: 29px;
+        font-size: 21px;
     }
     
     
@@ -142,6 +146,16 @@
         flex-basis: 40%;
         
     } 
+    
+    .name-form__name-field {
+        
+        
+        width: 268px;
+        
+        &--first {
+            width: 305px;
+        }
+    }
 }
 
 

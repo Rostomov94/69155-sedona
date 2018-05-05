@@ -16,18 +16,27 @@
     padding-bottom: 22.5px;
     
     &--lodging {
-       /** background: url(../img/icon-house.svg) no-repeat; 
-        background-position: 20px 15px;**/
+     //   background-image: svg-url(); 
+     //   background-repeat: no-repeat;
+     //  background-size: 11%;
+      //  background-position: 6% 2%;
         
         
+
     }
     
     &--souvenirs {
-      /**  background: url(../img/icon-gift.svg) no-repeat;**/
+       // background-image: url(../img/icon-gift.svg);
+      //  background-repeat: no-repeat;
+      //  background-size: 10%;
+      //  background-position: 6% 2%;
     }
     
     &--food {
-       /** background: url(../img/icon-burger.svg) no-repeat;**/
+     //   background-image: url(../img/icon-burger.svg);
+      //  background-repeat: no-repeat;
+      //  background-size: 11%;
+      //  background-position: 6% 2%;
     }
     
     &:last-child {
@@ -35,8 +44,16 @@
     }
 }
 
-.leisure__item__svg {
+.leisure__item-svg {
+    fill: #81b3d2;
+    stroke: #81b3d2;
     
+    position: absolute;
+    left: 15px;
+    
+    
+    width: 37px;
+    height: 39px;
 }
 
 .leisure__title {
@@ -46,8 +63,9 @@
     color: black;
     text-align: left;
     
-    padding-left: 50px;
-    padding-bottom: 25px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top: 8px;
 }
 
 .leisure__description {
@@ -57,9 +75,8 @@
     color: @litle-text;
     text-align: left;
     
-    padding-left: 50px;
-    
-    
+    padding-left: 70px;
+    padding-right: 20px;
 }
 
 
@@ -67,13 +84,9 @@
 @media screen and (min-width: @tablet-width) {  //768px
     
     .leisure__list {
-        
-       
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        
-        
+        justify-content: space-between; 
     }
     
     .leisure__item { 
@@ -87,15 +100,26 @@
         
         &--lodging {
             order: 1;
+            
+            background-size: 30%;
+            background-position: 50% 17%;
+            
+            
         }
 
         &--souvenirs {
           order: 3;
+            
+            background-size: 27%;
+            background-position: 45% 27%;
         }
 
         &--food {
            order: 2;
-        }
+            
+            background-size: 29%;
+            background-position: 44% 28%;
+        } 
     }
 
     .leisure__title {
@@ -105,8 +129,11 @@
         color: black;
         text-align: center;
         margin: 0 auto;
+        
+        
         padding: 0;
         padding-bottom: 30px;
+        padding-top: 134px;
         
         padding-right: ;
         padding-left: ;
@@ -120,8 +147,6 @@
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    
-    
     
     &--lodging {
         height: 53px;
@@ -144,6 +169,33 @@
     
     }
     
+    .leisure__item-svg {
+   
+    
+        position: absolute;
+        left: 15px;
+    
+    
+        width: 75px;
+        height: 72px;
+        bottom: 1572px;
+        
+    &--lodging {
+       left: 89px;
+        
+    }
+    
+    &--souvenirs {
+      left: 602px;
+        
+    }
+    
+    &--food {
+        left: 345px;
+        
+    }
+        
+    }
    
 }
 
@@ -181,6 +233,32 @@
         
     }
     
+    }
+    
+    .leisure__item-svg {
+   
+    
+        position: absolute;
+        left: 15px;
+        bottom: 1519px;
+    
+        
+        
+    &--lodging {
+       left: 162px;
+        
+    }
+    
+    &--souvenirs {
+      left: 962px;
+        
+    }
+    
+    &--food {
+        left: 561px;
+        
+    }
+        
     }
 }
 

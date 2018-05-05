@@ -54,7 +54,7 @@
         }
 }
 
-.nav__list-item a {
+.nav__list-link {
     text-decoration: none;
     color: white;
 }
@@ -152,10 +152,6 @@
         padding-bottom: 21px;
         padding-top: 21px;
         
-        &--active {
-
-        }
-        
         &--one {
             
         }
@@ -187,25 +183,35 @@
     
     
 
-    .nav__list-item a {
+    .nav__list-link {
         text-decoration: none;
         color: black;
         
+        
+    
         &:hover {
             color: #81b3d2;
-            
         }
 
         &:active {
             color: #766357;
-            
-            
         }
     }
     
+    .nav__list-link--active {
+            color: #766357;
     
-   
+            &:hover {
+                color: #604e43;
+            }
+            
+            &:active {
+                color: #dedad8;
+            }
+    }
 }
+
+
 
 
 
