@@ -4,57 +4,39 @@
 
 .leisure__list {
     list-style-type: none;
-    
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .leisure__item {
-    
+    background-repeat: no-repeat;
     padding-bottom: 22.5px;
+    background-position: 15px 4px;
+    background-size: 40px 37px;
     
-    &--lodging {
-     //   background-image: svg-url(); 
-     //   background-repeat: no-repeat;
-     //  background-size: 11%;
-      //  background-position: 6% 2%;
+    &:last-child {
+     //   padding-bottom: 0;
+    }
+    
+    &--house {
         
-        
-
+        background-image: url(/img/icon-house.svg);
+       
     }
     
     &--souvenirs {
-       // background-image: url(../img/icon-gift.svg);
-      //  background-repeat: no-repeat;
-      //  background-size: 10%;
-      //  background-position: 6% 2%;
+        
+        background-image: url(/img/icon-gift.svg);
+        
     }
     
     &--food {
-     //   background-image: url(../img/icon-burger.svg);
-      //  background-repeat: no-repeat;
-      //  background-size: 11%;
-      //  background-position: 6% 2%;
-    }
-    
-    &:last-child {
-        padding-bottom: 0;
+        
+        background-image: url(/img/icon-burger.svg);
+        
     }
 }
 
-.leisure__item-svg {
-    fill: #81b3d2;
-    stroke: #81b3d2;
-    
-    position: absolute;
-    left: 15px;
-    
-    
-    width: 37px;
-    height: 39px;
-}
 
 .leisure__title {
     font-size: 18px;
@@ -62,10 +44,9 @@
     text-transform: uppercase;
     color: black;
     text-align: left;
-    
     padding-left: 70px;
     padding-bottom: 15px;
-    padding-top: 8px;
+    padding-top: 12px;
 }
 
 .leisure__description {
@@ -74,7 +55,6 @@
     text-transform: uppercase;
     color: @litle-text;
     text-align: left;
-    
     padding-left: 70px;
     padding-right: 20px;
 }
@@ -91,35 +71,24 @@
     
     .leisure__item { 
         text-align: center;
-        
         flex-grow: 1;
         flex-shrink: 0;
         flex-basis: 33%;
+        width: 260px; 
+        background-position: 90px 42px;
+        background-size: 75px 72px;     //ширина высота;
         
-        width: 260px;
-        
-        &--lodging {
+        &--house {
             order: 1;
-            
-            background-size: 30%;
-            background-position: 50% 17%;
-            
-            
         }
 
         &--souvenirs {
-          order: 3;
-            
-            background-size: 27%;
-            background-position: 45% 27%;
+            order: 3;
         }
 
         &--food {
-           order: 2;
-            
-            background-size: 29%;
-            background-position: 44% 28%;
-        } 
+            order: 2;
+        }
     }
 
     .leisure__title {
@@ -129,14 +98,11 @@
         color: black;
         text-align: center;
         margin: 0 auto;
-        
-        
         padding: 0;
         padding-bottom: 30px;
         padding-top: 134px;
         
-        padding-right: ;
-        padding-left: ;
+        
     }
 
 .leisure__description {
@@ -150,7 +116,6 @@
     
     &--lodging {
         height: 53px;
-        
         padding-right: 49px;
         padding-left: 49px;
     }
@@ -169,33 +134,7 @@
     
     }
     
-    .leisure__item-svg {
-   
     
-        position: absolute;
-        left: 15px;
-    
-    
-        width: 75px;
-        height: 72px;
-        bottom: 1572px;
-        
-    &--lodging {
-       left: 89px;
-        
-    }
-    
-    &--souvenirs {
-      left: 602px;
-        
-    }
-    
-    &--food {
-        left: 345px;
-        
-    }
-        
-    }
    
 }
 
@@ -214,7 +153,6 @@
     
     &--lodging {
         height: 53px;
-        
         padding-right: 49px;
         padding-left: 49px;
     }
@@ -222,44 +160,21 @@
     &--souvenirs {
        padding-right: 43px;
         padding-left: 44px;
-        
         width: 214px;
         
     }
     
     &--food {
-        padding-right: 53px;
-        padding-left: 52px;
-        
+        padding-right: 60px;
+        padding-left: 60px;
     }
     
     }
     
-    .leisure__item-svg {
-   
-    
-        position: absolute;
-        left: 15px;
-        bottom: 1519px;
-    
-        
-        
-    &--lodging {
-       left: 162px;
-        
+    .leisure__item {
+        background-position: 162px 42px;
     }
     
-    &--souvenirs {
-      left: 962px;
-        
-    }
-    
-    &--food {
-        left: 561px;
-        
-    }
-        
-    }
 }
 
 

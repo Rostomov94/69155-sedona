@@ -22,16 +22,16 @@
                   </a>  
                     <ul class="nav__list nav--open"> <!--Блок, header__list Микс для позиционированя-->
                         
-                       <li class="nav__list-item nav__list-item--one"> <!--Элемент и модификатор элемента -->
+                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
                          <a class="nav__list-link" href="index.html">Главная</a>
                        </li>
-                       <li class="nav__list-item nav__list-item--two"> <!--Элемент и модификатор элемента -->
+                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
                          <a class="nav__list-link" href="photo.html">Фото и видео</a>
                        </li>
-                        <li class="nav__list-item nav__list-item--three nav__list-item--active"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item nav__list-item--active"> <!--Элемент и модификатор элемента -->
                          <a class="nav__list-link nav__list-link--active" href="form.html">Форма отзыва</a>
                         </li>
-                        <li class="nav__list-item nav__list-item--four"> <!--Элемент и модификатор элемента -->
+                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
                          <a class="nav__list-link" href="#">HTML academy</a>
                         </li>
                         
@@ -102,32 +102,28 @@
                 
                 
             <div class="contacts-info main__contacts-info">
-                <h2 class="contacts-info__title">Контактная информация:</h2>     
+                <h2 class="contacts-info__title">Контактная информация:</h2>  
+                
+                
                     <div class="contacts-info__input-block">
                         <p class="contacts-info__form">
+                            
+                            
                             <label class="contacts-info__text" for="contacts-form-tel"><span class="contacts-info__span">Контактный</span> телефон<sup>*</sup>:</label>
-                            <input class="contacts-info__field" id="contacts-form-tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
-
-                            <span class="contacts-info__icon">
-                                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
-                                      <g id="Page-1">
-                                        <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
-                                          <g id="phone" transform="translate(85.000000, 126.000000)">
-                                            <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
-                                          </g>
-                                        </g>
-                                      </g>
-                                    </svg>
-                            </span>
+                          
+                            <span class="contacts-info__wrapper contacts-info__wrapper--tel">
+                                <input class="contacts-info__field" id="contacts-form-tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
+                                
+                            </span>   
                         </p>
 
                         <p class="contacts-info__form contacts-info__form--mail">
+                            
+                            
                             <label class="contacts-info__text" for="contacts-form-mail">Электронная почта<sup>*</sup>:</label>
-                            <input class="contacts-info__field contacts-info__field--mail" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
-                            <span class="contacts-info__icon contacts-info__icon--mail">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                                      <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
-                                    </svg>
+                            
+                            <span class="contacts-info__wrapper contacts-info__wrapper--mail">
+                                <input class="contacts-info__field contacts-info__field--mail" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
                             </span>
                         </p>
                     </div>
