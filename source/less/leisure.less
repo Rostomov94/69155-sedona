@@ -4,40 +4,39 @@
 
 .leisure__list {
     list-style-type: none;
-    
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .leisure__item {
-    
+    background-repeat: no-repeat;
     padding-bottom: 22.5px;
+    background-position: 15px 4px;
+    background-size: 40px 37px;
     
-    &--lodging {
-       /** background: url(../img/icon-house.svg) no-repeat; 
-        background-position: 20px 15px;**/
+    &:last-child {
+     //   padding-bottom: 0;
+    }
+    
+    &--house {
         
-        
+        background-image: url(/img/icon-house.svg);
+       
     }
     
     &--souvenirs {
-      /**  background: url(../img/icon-gift.svg) no-repeat;**/
+        
+        background-image: url(/img/icon-gift.svg);
+        
     }
     
     &--food {
-       /** background: url(../img/icon-burger.svg) no-repeat;**/
-    }
-    
-    &:last-child {
-        padding-bottom: 0;
+        
+        background-image: url(/img/icon-burger.svg);
+        
     }
 }
 
-.leisure__item__svg {
-    
-}
 
 .leisure__title {
     font-size: 18px;
@@ -45,9 +44,9 @@
     text-transform: uppercase;
     color: black;
     text-align: left;
-    
-    padding-left: 50px;
-    padding-bottom: 25px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top: 12px;
 }
 
 .leisure__description {
@@ -56,10 +55,8 @@
     text-transform: uppercase;
     color: @litle-text;
     text-align: left;
-    
-    padding-left: 50px;
-    
-    
+    padding-left: 70px;
+    padding-right: 20px;
 }
 
 
@@ -67,34 +64,30 @@
 @media screen and (min-width: @tablet-width) {  //768px
     
     .leisure__list {
-        
-       
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        
-        
+        justify-content: space-between; 
     }
     
     .leisure__item { 
         text-align: center;
-        
         flex-grow: 1;
         flex-shrink: 0;
         flex-basis: 33%;
+        width: 260px; 
+        background-position: 90px 42px;
+        background-size: 75px 72px;     //ширина высота;
         
-        width: 260px;
-        
-        &--lodging {
+        &--house {
             order: 1;
         }
 
         &--souvenirs {
-          order: 3;
+            order: 3;
         }
 
         &--food {
-           order: 2;
+            order: 2;
         }
     }
 
@@ -107,9 +100,9 @@
         margin: 0 auto;
         padding: 0;
         padding-bottom: 30px;
+        padding-top: 134px;
         
-        padding-right: ;
-        padding-left: ;
+        
     }
 
 .leisure__description {
@@ -121,11 +114,8 @@
     margin: 0 auto;
     padding: 0;
     
-    
-    
     &--lodging {
         height: 53px;
-        
         padding-right: 49px;
         padding-left: 49px;
     }
@@ -143,6 +133,7 @@
     }
     
     }
+    
     
    
 }
@@ -162,7 +153,6 @@
     
     &--lodging {
         height: 53px;
-        
         padding-right: 49px;
         padding-left: 49px;
     }
@@ -170,18 +160,21 @@
     &--souvenirs {
        padding-right: 43px;
         padding-left: 44px;
-        
         width: 214px;
         
     }
     
     &--food {
-        padding-right: 53px;
-        padding-left: 52px;
-        
+        padding-right: 60px;
+        padding-left: 60px;
     }
     
     }
+    
+    .leisure__item {
+        background-position: 162px 42px;
+    }
+    
 }
 
 

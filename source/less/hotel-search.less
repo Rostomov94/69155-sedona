@@ -35,26 +35,27 @@
     text-decoration: none;
     color: white;
     background-color: @sedona-blue;
-    
+    cursor: pointer;
     font-weight: bold;
     
     margin-bottom: 49px;
+    
+    &:hover {
+            background-color: #669ec0;
+            
+        }
+        
+        &:active {
+            background-color: #5496bd;
+            
+            color: #94b9d2;
+        }
 }
-
-
-
 
 .hotel-search__map-bg {
-    background-image: url(../img/bg-map-mobile@1x.jpg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    display: block;
-    
-    height: 350px;
-}
-
-.hotel-search__map {
-    
+    width: 100%;
+    height: 400px;
+    margin: auto;
 }
 
 
@@ -71,8 +72,6 @@
 
         padding-top: 58px;
         padding-bottom: 31px;
-        
-        
     }
     
     .hotel-search__description {
@@ -95,16 +94,6 @@
         margin-bottom: 49px;
     }
     
-    .hotel-search__map-bg {
-        background-image: url(../img/bg-map-mobile@1x.jpg);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        display: block;
-        
-        width: 768px;
-        height: 350px;
-    }
-   
 }
 
 @media screen and (min-width: @desktop-width) { //1200px

@@ -1,5 +1,5 @@
 .contacts-info {
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #dbdbdb;
     padding-bottom: 7px;
 }
 
@@ -10,6 +10,7 @@
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 34px;
+    padding-top: 24px;
 }
 
 .contacts-info__form {
@@ -24,61 +25,135 @@
     margin-left: 22px;
 }
 
+
+
 .contacts-info__field {
     font-size: 18px;
     line-height: 26px;
     height: 58px;
-    width: 280px;
+    width: 252px;
     background-color: @sedona-form;
     color: black;
-    border: none;
+    border: 4px solid @sedona-form;
     padding-left: 22px;
     margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+    
+        &:hover {
+            background-color: #e5e5e5;
+            border-color: #e5e5e5; 
+        }
+        
+        &:active {
+            background-color: white;
+            
+            border-color: #e5e5e5;
+        }
+        
+        &:focus {
+            background-color: white;
+            outline: none;
+            border-color: #e5e5e5;
+        }
+    
+        &::placeholder {
+            color: black;
+            font-weight: bold;
+        }
 }
 
-.contacts-info__icon {
-    position: absolute;
+.contacts-info__wrapper {
+    
+        position: relative;
+    
+    &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 40px;
+            width: 58px;
+            height: 65px;
+            background-color: #e6e6e6; 
+            z-index: 10;
+            background-repeat: no-repeat;
+            background-position: center;
+    }
+    
+    &--tel::before {
+        background-image: url(/img/icon-phone.svg); 
+    }
+        
+    &--mail::before {
+          background-image: url(/img/icon-mail.svg);  
+    }
 }
+
+
 
 
 @media screen and (min-width: @tablet-width) {  //768px
     
+    .contacts-info__wrapper {
+        &::before {
+                top: 24px;   
+        }
+    }
+    
     .contacts-info {
         display: flex;
         flex-direction: column;
-        
         flex-basis: 100%;
-        
         border-bottom: 0;
+        margin-top: 50px;
     }
     
+    .contacts-info__title {
+        font-size: 21px;
+        background-color: white;
+        width: 400px;
+        margin: auto;
+        margin-top: -14px;
+        padding-top: 0px;
+    }
+    
+    
     .contacts-info__text {
-        
         margin-left: 22px;
-        
         padding-bottom: 15px;
     }
     
     .contacts-info__form {
-        padding-left: 60px;
-        
-        
-        
+        padding-left: 0;
     }
     
     .contacts-info__field {
-        
         height: 58px;
-        width: 626px;
-        background-color: @sedona-form;
+        width: 615px;
         color: black;
-        border: none;
         padding-left: 22px;
-        
+        border: 4px solid @sedona-form;
         margin: 0 auto;
+        
+        &:hover {
+            background-color: #e5e5e5;
+            border-color: #e5e5e5; 
+        }
+        
+        &:active {
+            background-color: white;
+            
+            border-color: #e5e5e5;
+        }
+        
+        &:focus {
+            background-color: white;
+            outline: none;
+            border-color: #e5e5e5;
+        }
     }
+    
+    
    
 }
 
@@ -86,32 +161,40 @@
 
 @media screen and (min-width: @desktop-width) { //1200px
     
-    
+    .contacts-info__wrapper {
+        &::before {
+             top: -22px;   
+        }
+    }
   
+    .contacts-info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    
     
     .contacts-info__text {
-        
-        margin-left: 30px;
-        
-        
+        margin-left: 0;
+        padding-right: 12px;
     }
     
     .contacts-info__form {
+        flex-basis: 50%;
+        padding-left: 0;
+            width: 400px;
         
-           padding-left: 75px;
-        
-        
+        &--mail {
+             width: 480px;
+            padding-left: 78px;
+        }
     }
     
     .contacts-info__input-block {
-        display: flex;
-        flex-direction: row;
-        
-        flex-wrap: wrap;
-        
+      display: flex;
+          flex-direction: row;
+        flex-wrap: nowrap;
         flex-basis: 100%;
-        
-        
     }
     
     .contacts-info__span {
@@ -119,15 +202,15 @@
     }
     
     .contacts-info__field {
-        
         height: 58px;
-        width: 298px;
-        background-color: @sedona-form;
+        width: 301px;
         color: black;
-        border: none;
         padding-left: 22px;
-        
         margin: 0 auto;
+        
+        &--mail {
+            width: 248px;
+        }
     }
     
 }

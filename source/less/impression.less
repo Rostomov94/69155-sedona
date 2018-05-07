@@ -1,5 +1,5 @@
 .impression {
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #dbdbdb;
 }
 
 .impression__title {
@@ -10,6 +10,7 @@
     text-align: center;
     
     padding-bottom: 48px;
+    padding-top: 25px;
 }
 
 .impression__radio-item {
@@ -18,18 +19,75 @@
     margin-left: 20px;
 }
 
-
+.impression__radio-button {
+    position: absolute;
+      z-index: -1;
+      opacity: 0;
+}
 
 .impression__radio-text {
     font-size: 18px;
     line-height: 26px;
     color: black;
-    
     font-weight: bold;
+   
     
-    padding-left: 27px;
+    text-align: center;
 }
 
+.impression__radio-button + .impression__radio-text {
+    position: relative;
+    padding: 12px 0 0 75px;
+    cursor: pointer;
+}
+
+.impression__radio-button + .impression__radio-text:before {        // Большой кружочек
+    content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 56px;
+      height: 55px;
+      border: 1px solid #f2f2f2;
+      border-radius: 50%;
+      background: #f2f2f2;
+    
+}
+
+.impression__radio-text:hover:before {
+    background: #e5e5e5;
+}
+
+.impression__radio-text:active:before {
+    background: #d5d5d5;
+}
+
+.impression__radio-button + .impression__radio-text:after {     // Маленький кружочек
+    content: '';
+      position: absolute;
+      top: 15px;
+      left: 19px;
+      width: 22px;
+      height: 21px;
+      border-radius: 50%;
+      background: #333333;
+      
+      opacity: 0;
+      transition: .2s;
+}
+
+
+.impression__radio-text:active:after {
+    opacity: 0.3;
+}
+
+.impression__radio-button:checked + .impression__radio-text:after {
+    opacity: 1;
+}
+
+.impression__radio-button:focus + .impression__radio-text:before {
+    border: 1px solid #f2f2f2;
+}
 
 @media screen and (min-width: @tablet-width) {  //768px
     
@@ -37,18 +95,27 @@
         display: flex;
         flex-direction: column;
         
-        border-right: 1px solid #e5e5e5;
-        
+        border-right: 1px solid #dbdbdb;
+        border-top: none;
         flex-basis: 50%;
         order: -1;
         
-        border-bottom: 0;
+        
+    }
+    
+    .impression__title {
+        padding-top: 0;
+        font-size: 21px;
     }
     
     .impression__radio-item {
         padding-bottom: 52px;
         text-align: left;
-        margin-left: 67px;
+        margin-left: 0px;
+        
+        &--last {
+            padding-bottom: 21px;
+        }
     }
    
 }
@@ -57,13 +124,32 @@
 
 @media screen and (min-width: @desktop-width) { //1200px
     
+    .impression__title {
+        
+        text-align: center;
+        
+    }
+    
+    .impression__radio-item {
+        margin-left: 67px;
+        
+        padding-bottom: 52px;
+        text-align: left;
+        
+    }
+    
     .impression {
         display: flex;
         flex-direction: column;
         
-        width: 400px;
+        flex-wrap: wrap;
         
-        flex-basis: 400px;
+        flex-basis: 48%;
+        
+        padding-right: 15px;
+       // padding-left: 54px;
+        
+        width: 480px;
         order: -1;
     }
     
