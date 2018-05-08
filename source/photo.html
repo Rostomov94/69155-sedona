@@ -50,8 +50,14 @@
               
                  
               
-                  <div class="logo header__logo">                           <!--header__logo Микс для позиционирования -->
-                        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип меню">     <!--img/logo-sedona-mobile.svg -->
+                  <div class="logo header__logo"> 
+                      <a class="logo__link" href="#">
+                          <picture>
+                            <source media="(max-width: 768px)" srcset="img/logo-sedona-mobile.svg">
+                            <source media="(max-width: 1200px)" srcset="img/logo-sedona-tablet.svg">
+                            <img src="img/logo-sedona-desktop.svg" width="104" height="82" alt="Логотип меню">
+                          </picture>
+                      </a>
                   </div>
               
                  
@@ -61,14 +67,11 @@
         <main class="main">
             
                 
-            <div class="greetings main__greetings">                   <!--header__greetings Микс для позиционирования-->
-                <div class="greetings__img">
-                  <!--  <img class="greetings__text-sedona-index" src="img/text-sedona.svg">-->
-                </div>
+            <div class="intro-photo">                   
+                    <img class="intro-photo__img" src="img/text-sedona.svg">
             </div>  
-                
-             <!-- Начало -->   
-               
+            
+            
                 <div class="photo-and-video main__photo-and-video">
 
                     <h2 class="photo-and-video__title">Фото и видео</h2>    <!--main__title микс для общего стиля-->
@@ -80,7 +83,11 @@
              <div class="photo-block">   
                  
                 <div class="photo-block__square photo-block__square--one main__photo-block">
-                    <img class="photo-block__img" src="img/photo-sunset-mobile@1x.jpg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1200px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                        <img class="photo-block__img" src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg 2x" alt="Мост">
+                    </picture>
                     <div class="photo-block__footer">
                         <p class="photo-block__title photo-block__title--one">
                             неродные просторы
@@ -108,7 +115,11 @@
 
 
                 <div class="photo-block__square photo-block__square--two main__photo-block">
-                    <img class="photo-block__img" src="img/photo-cactus-mobile@1x.jpg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1200px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                        <img class="photo-block__img" src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg 2x" alt="Мост">
+                    </picture>
                     <div class="photo-block__footer">
                         <p class="photo-block__title photo-block__title--two">
                             местная растительность
@@ -131,8 +142,11 @@
 
 
                 <div class="photo-block__square photo-block__square--three main__photo-block">
-                    
-                    <img class="photo-block__img" src="img/photo-roads-mobile@1x.jpg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1200px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                        <img class="photo-block__img" src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg 2x" alt="Мост">
+                    </picture>
                     <div class="photo-block__footer">
                         <p class="photo-block__title photo-block__title--three">
                             дорога на север
@@ -155,8 +169,11 @@
 
 
                 <div class="photo-block__square photo-block__square--four main__photo-block">
-                    
-                    <img class="photo-block__img" src="img/photo-bridge-mobile@1x.jpg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1200px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                        <img class="photo-block__img" src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg 2x" alt="Мост">
+                    </picture>
                     <div class="photo-block__footer">
                         <p class="photo-block__title photo-block__title--four">
                             Мост дьявола
@@ -187,9 +204,12 @@
                  
                  
                  
-                 <div class="video-player main__video-player">                                             <!-- Создать, импортировать -->
-                    <img class="video-player__img-video" src="img/video-mobile@1x.jpg">
-                     
+                 <div class="video-player main__video-player">                                             
+                     <picture>
+                        <source media="(max-width: 768px)" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1200px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                        <img class="video-player__img-video" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg 2x" alt="Мост">
+                    </picture>
                      <div class="video-player__controls">
                          <button class="video-player__replay">
                             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">

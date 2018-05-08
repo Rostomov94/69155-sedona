@@ -1,9 +1,45 @@
-
 .city-info {
     background-color: @sedona-blue;
     
     display: flex;
     justify-content: space-between;
+    
+    
+}
+
+picture {
+    
+}
+
+.city-info__block {
+    
+}
+
+.city-info__block-photo {
+    background-image: url(../img/main-city-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    display: block;
+    height: 260px;
+    
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+            background-image: url(../img/main-city-mobile@2x.jpg);
+        } 
+    
+    &--devil-bridge {
+        background-image: url(../img/main-bridge-mobile@1x.jpg);
+        
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+            background-image: url(../img/main-bridge-mobile@2x.jpg);
+        } 
+        
+    }
+}
+
+.city-info__img {
+    width: 100%;
+    height: auto;
 }
 
 .city-info__title {
@@ -47,10 +83,26 @@
 }
 
 @media screen and (min-width: @tablet-width) {  //768px
-    .city-info__img {
-        flex-basis: 66%;
-    }
     
+    
+    
+    .city-info__block-photo {
+        background-image: url(../img/main-city-tablet@1x.jpg);
+        flex-basis: 66%;
+        background-size: cover;
+        
+         @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+            background-image: url(../img/main-city-tablet@2x.jpg);
+        } 
+        
+        &--devil-bridge {
+             background-image: url(../img/main-bridge-tablet@1x.jpg);
+            
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+                background-image: url(../img/main-bridge-tablet@2x.jpg);
+            } 
+        }
+    }
     
     .city-info__title {
         font-size: 21px;
@@ -64,6 +116,8 @@
     }
     
     .city-info__description { 
+        padding-bottom: 0;
+        
         margin: auto;
         width: 178px;
         &--devil-bridge { 
@@ -76,6 +130,7 @@
     .city-info__block {
         flex-basis: 33%;
         
+      
     &--devil-bridge {
         order: 2;    
     }
@@ -86,6 +141,27 @@
 
 @media screen and (min-width: @desktop-width) { //1200px
     
+    .city-info__block-photo {
+        background-image: url(../img/main-city-desktop@1x.jpg);
+        
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+            background-image: url(../img/main-city-desktop@2x.jpg);
+        } 
+        
+        &--devil-bridge {
+             background-image: url(../img/main-bridge-desktop@1x.jpg);
+            
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
+                background-image: url(../img/main-bridge-desktop@2x.jpg);
+            } 
+            
+        }
+    }
+    
+    .city-info__img {
+        height: 248px;
+        width: 100%;
+    }
     
     .city-info__title {
         font-size: 21px;
@@ -113,6 +189,7 @@
     }
     
 }
+
 
 
 
