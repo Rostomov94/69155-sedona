@@ -1,0 +1,82 @@
+.intro-photo {
+    position: relative;
+    width: 100%;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-color: #81b3d2;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {    
+            background-image: url(../img/bg-back-mobile@2x.jpg);      
+    }
+    
+       &:after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            bottom: -1px;
+            height: 27px;
+            background-image: url(../img/bg-intro-triangle-mobile.svg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 322px 27px;
+           
+    }
+}
+
+.intro-photo__img {
+    padding-top: 52px;
+    padding-bottom: 69px;
+    display: block;
+    margin: 0 auto;
+    width: 229px;
+    height: 39px;
+}
+
+
+
+
+@media screen and (min-width: @tablet-width) {  //768px
+    .intro-photo {
+            background-image: url(../img/bg-back-tablet@1x.jpg);
+            
+            @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+                background-image: url(../img/bg-back-tablet@2x.jpg);
+            }
+        
+        &:after {
+            background-size: 100% 57px;
+            height: 57px;
+            background-image: url(../img/bg-intro-triangle-tablet.svg);
+        }
+    }
+    
+    .intro-photo__img {
+            width: 458px;
+            height: 78px;
+            padding-top: 95px;
+            padding-bottom: 115px;
+    }
+    
+     
+}
+
+@media screen and (min-width: @desktop-width) { //1200px
+    
+     .intro-photo {
+        background-image: url(../img/bg-back-desktop@1x.jpg);
+        
+         @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-desktop@2x.jpg);
+        }
+         
+        &:after {
+            background-size: 1202px 57px;                              
+            background-image: url(../img/bg-intro-triangle-desktop.svg);
+        }
+    }
+    
+    
+    
+}
