@@ -8,62 +8,52 @@
     
 }
 
-.nav--closed {
+.nav__list--closed {
     display: none;
 }
 
-.nav--open {
+.nav__list--open {
     display: flex;
 }
 
 .nav__list-item {
-
-    
     background-color: @sedona-blue;
-    font-size: 18px;
-    text-decoration: none;
     list-style-type: none;
-    text-transform: uppercase;
-   color: white;
     border-bottom: 1px solid #678fa8;
-    border-top: 1px solid #9ac2db;
-    font-weight: 600;
-   
-  padding-bottom: 21px;
-    padding-top: 21px;
+    border-top: 1px solid #9ac2db;   
     text-align: center;
-    
+}
 
+.nav__list-link {
+    background-color: @sedona-blue;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 14px;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+     font-weight: bold;
+     display: block;
     
-     &:hover {
+        &:hover {
             background-color: #669ec0;
-            
         }
         
         &:active {
             background-color: #5496bd;
-            color: #94b9d2;
+            color: rgb(148, 185, 210);
         }
-        
-        &:focus {
-            
-        }
-}
-
-.nav__list-link {
-    text-decoration: none;
-    color: white;
-    
-     display: block;
 }
 
 .nav__toggle-close {
     position: absolute;
-    right: 0px; //79
-    
+    right: 0px; 
+    background-color: transparent;
     width: 64px;
     height: 56px;
-    
+    border: 0;
     cursor: pointer;
     z-index: 10;
 }
@@ -73,16 +63,16 @@
    position: absolute;
    top: 29%;
     right: 30%;
-    fill: white;
-    stroke: white;
+
     
 }
 
 
 .nav__toggle-open {
-    
+    background-color: transparent;
+    border: 0;
    position: absolute;
-    right: 0px; //79
+    right: 0px; 
     width: 64px;
     height: 56px;
     
@@ -96,13 +86,12 @@
    position: absolute;
    top: 29%;
     right: 30%;
-    fill: #81b3d2;
-    stroke: #81b3d2;
+ 
 }
 
 
 
-@media screen and (min-width: @tablet-width) {  //768px
+@media screen and (min-width: @tablet-width) {  
     
     .nav__toggle-open {
         display: none;
@@ -113,69 +102,65 @@
     }
     
     .nav__list {
-        padding: 0;
-        text-decoration: none;
-        
-       
-        
+        width: 768px;
         display: flex;
         flex-direction: row;
-        
-        width: 768px;
     }
 
     .nav__list-item {
-        font-size: 14px;
-        line-height: 26px;
-        background-color: white;
         border-bottom: none;
         border-top: none;
-      //  max-width: 768px;
-        padding-bottom: 21px;
-        padding-top: 21px;
-        
         width: 20%;
-        
+        background-color: transparent;
+        border-color: transparent;
         &:nth-child(2) {
             margin-right: 20%; 
         }
         
         &:hover {
-            background-color: white;
+          //background-color: transparent;
             
         }
         
         &:active {
-            background-color: white;
-            color: #94b9d2;
+        // background-color: transparent;
+          //  color: #94b9d2;
         }
         
     }
-    
-    
 
     .nav__list-link {
+        font-size: 14px;
+        line-height: 26px;
+       
+        background-color: transparent;
+        border-color: transparent;
+        padding-bottom: 21px;
+       padding-top: 21px;
+        
         text-decoration: none;
         color: black;
         
         &:hover {
-            color: #81b3d2;
+            background-color: white;
+            color: #8bb9d5;
         }
 
         &:active {
-            color: #766357;
+            background-color: white;
+            color: rgba(206, 206, 206, 0.8);
         }
     }
     
     .nav__list-link--active {
-            color: #766357;
+            color: rgba(118, 99, 87, 1.7);
     
             &:hover {
                 color: #604e43;
             }
             
             &:active {
-                color: #dedad8;
+                color: rgba(219, 216, 213, 1.6);
             }
     }
 }
@@ -184,18 +169,11 @@
 
 
 
-@media screen and (min-width: @desktop-width) { //1200px
+@media screen and (min-width: @desktop-width) { 
     
-    .nav__list {
-        padding: 0;
-        text-decoration: none;
+  .nav__list {
         
-        
-        
-        display: flex;
-        flex-direction: row;
         width: 1200px;
-        
     }
     
     
