@@ -38,7 +38,10 @@
     "node": "8.11"
   },
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "csso": "^3.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rostomov94/69155-sedona.git"
