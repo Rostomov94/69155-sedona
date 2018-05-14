@@ -1,300 +1,202 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Седона</title>
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div style="display: none">
-            <include src="build/img/sprite.svg"></include>
-        </div>
-        
-        <div class="modal modal__success">
-            <div class="modal__description-wrapper">
-                <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
-                <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    
-            </div>
-            <div class="modal__button modal__button--grey">
-                    <a class="modal__btn modal__btn--success" href="#">Закрыть окно</a>
-            </div>
-        </div>
-        
-        <div class="modal modal__not-success">
-           <div class="modal__description-wrapper">
-                <p class="modal__title">Что-то пошло не так!</p>
-                <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                <div class="modal__button">
-                    <a class="modal__btn" href="#">Ок</a>
-                </div>
-           </div> 
-        </div>
-        
-        
-       <div class="page-wrapper"> 
-        <header class="header">
-                  <!--Обвертка-->
-              
-              <nav class="nav header__nav">    <!--Блок, header__nav Микс для позиционированя-->
-                  <button class="nav__toggle-close">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-                            
-                          <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-                            
-                        </svg>
-                  </button>  
-                    <ul class="nav__list nav__list--open"> <!--Блок, header__list Микс для позиционированя-->
-                        
-                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
-                         <a class="nav__list-link" href="index.html">Главная</a>
-                       </li>
-                       <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
-                         <a class="nav__list-link" href="photo.html">Фото и видео</a>
-                       </li>
-                        <li class="nav__list-item nav__list-item--active"> <!--Элемент и модификатор элемента -->
-                         <a class="nav__list-link nav__list-link--active" href="form.html">Форма отзыва</a>
-                        </li>
-                        <li class="nav__list-item"> <!--Элемент и модификатор элемента -->
-                         <a class="nav__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-                        </li>
-                        
-                    </ul>
-                    <button class="nav__toggle-open">
-                           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-                              <g>
-                                <rect width="22.928" height="3.964"/>
-                                <rect y="9.009" width="22.928" height="3.964"/>
-                                <rect y="18.018" width="22.928" height="3.964"/>
-                              </g>
-                            </svg>    
-                    </button>
-              </nav>
-              
-                    
-              
-                 
-              
-                  <div class="logo header__logo"> 
-                      <a class="logo__link" href="index.html">
-                          <picture>
-                            <source media="(max-width: 768px)" srcset="img/logo-sedona-mobile.svg">
-                            <source media="(max-width: 1200px)" srcset="img/logo-sedona-tablet.svg">
-                            <img src="img/logo-sedona-desktop.svg" width="104" height="82" alt="Логотип меню">
-                          </picture>
-                      </a>
-                  </div>
-              
-                 
-          
-      </header>
-        
-        
-      <main class="main">
-          <!--Обвертка-->
-            
-            <div class="intro-photo">                   
-                    <img class="intro-photo__img" src="img/text-sedona.svg">
-            </div>
-            
-            <div class="sentence main__sentence">
-                <h2 class="sentence__intro">Оставьте свой отзыв</h2>    
-                
-                <p class="sentence__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-            </div>
-            
-            <div class="form-wrapper">
-            <form class="form main__form">
-                
-            <div class="name-form main__name-form">
-                    <h2 class="name-form__title">Представьтесь<span class="name-form__please">, пожалуйста</span>:</h2> 
-                
-                
-                    <p class="name-form__item">
-                        <label class="name-form__name" for="name-form-one">Имя<sup>*</sup>:</label>
-                        <input class="name-form__name-field name-form__name-field--first" id="name-form-one" name="username" type="text" value="" required placeholder="Петр">
-                        
-                    </p>
-                    <p class="name-form__item">
-                        <label class="name-form__name" for="name-form-two">Фамилия<sup>*</sup>:</label>
-                        <input class="name-form__name-field" id="name-form-two" name="username" type="text" value="" required placeholder="Иванов">
-                        
-                    </p>
-                    <p class="name-form__item">
-                        <label class="name-form__name" for="name-form-three">Отчество<sup>*</sup>:</label>
-                        <input class="name-form__name-field" id="name-form-three" name="username" type="text" value="" required placeholder="Александрович">
-                        
-                    </p>
-            </div>
-                
-                
-                
-            <div class="contacts-info main__contacts-info">
-                <h2 class="contacts-info__title">Контактная информация:</h2>  
-                
-                
-                    <div class="contacts-info__input-block">
-                        
-                        <p class="contacts-info__form">
-                            
-                                    
-                                        <label class="contacts-info__label" for="contacts-form-tel">
-                                           <span class="contacts-info__text"> 
-                                               <span class="contacts-info__span">Контактный</span> телефон<sup>*</sup>: 
-                                           </span>
-                          
-                                           <span class="contacts-info__wrapper contacts-info__wrapper--tel"> 
-                                                <input class="contacts-info__field" id="contacts-form-tel" name="tel" type="tel" value="" required placeholder="Введите телефон">
-                                           </span> 
-                                        </label>
-                                    
-                               
-                        </p>
-
-                        <p class="contacts-info__form contacts-info__form--mail">
-                            
-                             
-                                <label class="contacts-info__label" for="contacts-form-mail">
-                                    
-                                    <span class="contacts-info__text">
-                                          Электронная почта<sup>*</sup>:
-                                    </span>
-                            
-                                    <span class="contacts-info__wrapper contacts-info__wrapper--mail">
-                                        <input class="contacts-info__field contacts-info__field--mail" id="contacts-form-mail" name="mail" type="mail" value="" required placeholder="Введите почту">
-                                    </span>
-                            
-                                </label>
-                            
-                            
-                        </p>
-                    </div>
-            </div>  
-                
-                
-                
-                
-            <div class="impression main__impression">
-                <h2 class="impression__title">Ваше общее впечатление:</h2>
-                
-                <p class="impression__radio-item">
-                    <input class="impression__radio-button" type="radio" name="1" checked="checked" value="#" id="god">
-                    <label class="impression__radio-text" for="god">Скорее положительное</label>                        <!-- impression__radio-text--click impression__radio-text--radio -->
-                </p>
-                
-                 <p class="impression__radio-item">
-                     <input class="impression__radio-button" type="radio" name="1" value="#" id="bad">
-                     <label class="impression__radio-text" for="bad">Скорее отрицательное</label>
-                </p>
-                
-                <p class="impression__radio-item impression__radio-item--last">
-                    <input class="impression__radio-button" type="radio" name="1" value="#" id="not">
-                    <label class="impression__radio-text" for="not">Затрудняюсь ответить</label>
-                </p>
-                
-            </div>
-                
-                
-            <div class="attraction main__attraction">
-                <h2 class="attraction__title">Посещенные достопримечательности:</h2> 
-                <div class="attraction__radio-block">
-                    <p class="attraction__radio-item">
-                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="bridge"/>
-                        <label class="attraction__checkbox-text" for="bridge">Мост Дьявола</label>
-                    </p>
-                    <p class="attraction__radio-item">
-                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="mounth"/>
-                        <label class="attraction__checkbox-text" for="mounth">Гора-Колокол</label>
-                    </p>
-                    <p class="attraction__radio-item">
-                        <input class="attraction__checkbox" type="checkbox" name="" checked="checked" id="park"/>
-                        <label class="attraction__checkbox-text" for="park">Слайд-парк</label>
-                    </p>
-                    <p class="attraction__radio-item attraction__radio-item--last">
-                        <input class="attraction__checkbox" type="checkbox" name="" id="rock"/>
-                        <label class="attraction__checkbox-text" for="rock">Красные скалы</label>
-                    </p>
-                </div>
-            </div> 
-                
-                
-            <div class="emotions main__emotions">
-                <h2 class="emotions__title">Опишите свои эмоции:</h2>   <!--main__title микс для общего стиля-->
-                <textarea class="emotions__text-area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-                <div class="emotions__footer">
-                    <button class="emotions__button">Отправить отзыв</button>
-
-                    <p class="emotions__required"> *— Обязательные поля</p>
-                </div>
-            </div>    
-                
-                
-            </form>
-                </div>
-                  <!--Обвертка-->
-             
-        </main>
-           
-        
-        
-        <footer class="footer">
-                  <!--Обвертка-->
-                
-               <div class="footer__block"> 
-                   
-                    <div class="hash footer__hash">
-                        <h3 class="hash__text">#VisitSedona</h3>
-                    </div>
-
-
-                    <div class="soc-button footer__soc-button">
-                        
-                        <a class="soc-button__social-btn" href="#">
-                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                              <g id="W6EeEF_1_">
-                                <g>
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-                                </g>
-                              </g>
-                            </svg>
-                        </a>
-                        
-                        <a class="soc-button__social-btn" href="#">
-                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                              <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-                            </svg> 
-                        </a>
-                        
-                        <a class="soc-button__social-btn" href="#">
-                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-                            </svg>
-                        </a>
-                        
-                    </div>
-
-
-                    <div class="develop footer__develop">
-                        <p class="develop__text">
-                            Разработано
-                            
-                        </p>
-                        
-                        <a class="develop__icon" href="https://htmlacademy.ru/intensive/adaptive">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                                  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-                                </svg>
-                            </a>
-                    </div>
-                   
-                   
-                   
-                </div>
-                
-            
-        </footer>
-        </div>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/picturefill.js" async="true"></script>
+  <script>document.createElement( "picture" );</script>
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>     
+<div class="modal modal--success">
+  <div class="modal__description-wrapper">
+    <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
+    <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  </div>
+  <div class="modal__button modal__button--grey">
+    <a class="modal__btn modal__btn--success" href="#">Закрыть окно</a>
+  </div>
+</div>  
+<div class="modal modal--not-success">
+  <div class="modal__description-wrapper">
+    <p class="modal__title modal__title--not-success">Что-то пошло не так!</p>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <div class="modal__button modal__button--not-success">
+    <a class="modal__btn modal__btn--not-success" href="#">Ок</a>
+  </div>
+  </div> 
+</div>
+<div class="page-wrapper"> 
+<header class="header">           
+<nav class="nav header__nav">    
+  <button class="nav__toggle">
+    <svg fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">                
+    <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+    </svg>
+  </button>   
+  <ul class="nav__list nav__list--open"> 
+    <li class="nav__list-item"> 
+      <a class="nav__list-link" href="index.html">Главная</a>
+    </li>
+    <li class="nav__list-item"> 
+      <a class="nav__list-link" href="photo.html">Фото и видео</a>
+    </li>
+    <li class="nav__list-item nav__list-item--active"> 
+      <a class="nav__list-link nav__list-link--active" href="form.html">Форма отзыва</a>
+    </li>
+    <li class="nav__list-item"> 
+      <a class="nav__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+    </li>                    
+  </ul>
+</nav>
+<div class="logo header__logo"> 
+  <a class="logo__link" href="index.html">
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source media="(max-width: 768px)" srcset="img/logo-sedona-mobile.svg">
+      <source media="(max-width: 1200px)" srcset="img/logo-sedona-tablet.svg">
+      <!--[if IE 9]></video><![endif]-->
+      <img src="img/logo-sedona-desktop.svg" width="104" height="82" alt="Логотип меню">
+    </picture>
+  </a>
+</div>
+</header>
+<main class="main">
+<div class="intro-photo">                   
+  <img class="intro-photo__img" src="img/text-sedona.svg" alt="Sedona">
+</div>       
+<div class="sentence main__sentence">
+  <h2 class="sentence__intro">Оставьте свой отзыв</h2>    
+  <p class="sentence__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+</div>
+<div class="form-wrapper">
+<form class="form main__form">
+<div class="name-form main__name-form">
+  <h2 class="name-form__title">Представьтесь:</h2> 
+  <p class="name-form__item">
+    <label class="name-form__name" for="name-form-one">Имя<sup>*</sup>:</label>
+    <input class="name-form__name-field name-form__name-field--first" id="name-form-one" name="username" type="text" value="" required placeholder="Петр">
+  </p>
+  <p class="name-form__item">
+    <label class="name-form__name" for="name-form-two">Фамилия<sup>*</sup>:</label>
+    <input class="name-form__name-field" id="name-form-two" name="username" type="text" value="" required placeholder="Иванов">
+  </p>
+  <p class="name-form__item">
+    <label class="name-form__name" for="name-form-three">Отчество:</label>
+    <input class="name-form__name-field name-form__name-field--last" id="name-form-three" name="username" type="text" value="" required placeholder="Александрович">
+  </p>
+</div>          
+<div class="contacts-info main__contacts-info">
+  <h2 class="contacts-info__title">Контактная информация:</h2>  
+<div class="contacts-info__input-block">
+<p class="contacts-info__form">
+  <label class="contacts-info__label" for="contacts-form-tel">
+    <span class="contacts-info__text"> 
+      <span class="contacts-info__span">Контактный</span> телефон<sup>*</sup>: 
+    </span>
+    <span class="contacts-info__wrapper contacts-info__wrapper--tel"> 
+      <input class="contacts-info__field" id="contacts-form-tel" required placeholder="Введите телефон">
+    </span> 
+  </label>
+</p>
+<p class="contacts-info__form contacts-info__form--mail">
+  <label class="contacts-info__label" for="contacts-form-mail">
+    <span class="contacts-info__text">Электронная почта<sup>*</sup>:</span>
+    <span class="contacts-info__wrapper contacts-info__wrapper--mail">
+      <input class="contacts-info__field contacts-info__field--mail" id="contacts-form-mail" required placeholder="Введите почту">
+    </span>
+  </label> 
+</p>
+</div>
+</div>  
+<div class="impression main__impression">
+  <h2 class="impression__title">Ваше общее впечатление:</h2>
+  <p class="impression__radio-item">
+    <input class="impression__radio-button" type="radio" name="1" checked="checked" value="#" id="god">
+    <label class="impression__radio-text" for="god">Скорее положительное</label>                        
+  </p>
+  <p class="impression__radio-item">
+    <input class="impression__radio-button" type="radio" name="1" value="#" id="bad">
+    <label class="impression__radio-text" for="bad">Скорее отрицательное</label>
+  </p>
+  <p class="impression__radio-item impression__radio-item--last">
+    <input class="impression__radio-button" type="radio" name="1" value="#" id="not">
+    <label class="impression__radio-text" for="not">Затрудняюсь ответить</label>
+  </p>
+</div>
+<div class="attraction main__attraction">
+  <h2 class="attraction__title">Посещенные достопримечательности:</h2> 
+  <div class="attraction__radio-block">
+    <p class="attraction__radio-item">
+      <input class="attraction__checkbox" type="checkbox" checked="checked" id="bridge"/>
+      <label class="attraction__checkbox-text" for="bridge">Мост Дьявола</label>
+    </p>
+    <p class="attraction__radio-item">
+      <input class="attraction__checkbox" type="checkbox" checked="checked" id="mounth"/>
+      <label class="attraction__checkbox-text" for="mounth">Гора-Колокол</label>
+    </p>
+    <p class="attraction__radio-item">
+      <input class="attraction__checkbox" type="checkbox" checked="checked" id="park"/>
+      <label class="attraction__checkbox-text" for="park">Слайд-парк</label>
+    </p>
+    <p class="attraction__radio-item attraction__radio-item--last">
+      <input class="attraction__checkbox" type="checkbox" id="rock"/>
+      <label class="attraction__checkbox-text" for="rock">Красные скалы</label>
+    </p>
+  </div>
+</div> 
+<div class="emotions main__emotions">
+  <h2 class="emotions__title">Опишите свои эмоции:</h2>   <!--main__title микс для общего стиля-->
+  <textarea class="emotions__text-area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+  <div class="emotions__footer">
+    <button class="emotions__button">Отправить отзыв</button>
+    <p class="emotions__required"> *— Обязательные поля</p>
+  </div>
+</div>    
+</form>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer__block"> 
+    <div class="hash footer__hash">
+      <h3 class="hash__text">#VisitSedona</h3>
+    </div>
+    <div class="soc-button footer__soc-button">
+      <a class="soc-button__social-btn" href="#">
+          <svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <g id="W6EeEF_1_">
+           <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          </g>
+         </g>
+        </svg>
+      </a>
+      <a class="soc-button__social-btn" href="#">
+        <svg id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+        <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+        </svg> 
+      </a>
+      <a class="soc-button__social-btn" href="#">
+        <svg id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+        <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="develop footer__develop">
+      <p class="develop__text">Разработано</p>
+      <a class="develop__icon" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+       </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="/js/main.js"></script>
+</body>
 </html>

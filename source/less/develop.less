@@ -1,43 +1,44 @@
 .develop {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 35px;
 }
 
 .develop__text {
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: black;
-    padding-right: 12px;
-    
-        
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 12px;  
+    text-align: center;
 }
 
 .develop__icon {
-    height: 100%;
-    width: 27px;
-    height: 34px;
-    
-    &:hover {
-            fill: rgb(129, 179, 210);
-        }
+  height: 100%;
+  width: 27px;
+  height: 34px;
+  
+&:hover {
+  fill: rgb(129, 179, 210);
+}
         
-        &:active {
-            opacity: 0.6;
-            fill: #b2b2b2;
-        }
+&:active {
+  opacity: 0.6;
+  fill: #b2b2b2;
+}
 }
 
 
 
 .develop__text {
-    padding-top: 2px;
+  padding-top: 2px;
 }
 
 
-@media screen and (min-width: @tablet-width) {  //768px
-    .develop {
-        margin: 0;
-    }
+@media screen and (min-width: @tablet-width) {  
+    
+.develop {
+  margin: 0;
+}
 }

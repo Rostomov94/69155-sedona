@@ -1,57 +1,51 @@
 .soc-button {
-    margin-bottom: 51px;
-    text-align: center;
-    display: inline;
- 
+  margin-bottom: 51px;
+  text-align: center;
+  display: inline;
 }
 
 .soc-button__social-btn {
-
-        width: 46px;
-        height: 48px;
-        display: inline-block;
-        vertical-align: top;
+  width: 46px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  background-color: #81b3d2;
+  cursor: pointer;
+  fill: white;
+  
+svg {
+  height: 100%;     
+}
     
-        margin-right: 6px;
-    
-        background-color: #81b3d2;
-        cursor: pointer;
-        fill: white;
-    
-        svg {
-            height: 100%;
-        }
-    
-        &:hover {
-            background-color: #669ec0;
-        }
+&:hover {
+  background-color: #669ec0;
+}
         
-        &:active {
-            
-            background-color: #5496bd;
-        }
+&:active {
+  background-color: #5496bd;
+}
     
-        &:active svg {
-            opacity: 0.3;
-        }
+&:active svg {
+  opacity: 0.3;
+}
     
-        &:last-child {
-            margin-right: 0;
-        }
+&:last-child {
+  margin-right: 0;
+}
     
 }
 
 
 
 
-@media screen and (min-width: @tablet-width) {  //768px
+@media screen and (min-width: @tablet-width) {  
     
 .soc-button {
-        padding-bottom: 35px;
-        padding-top: 35px;
-        margin-bottom: 0;
-        display: inline;
-    }
-    
-    
+  padding-bottom: 35px;
+  padding-top: 35px;
+  margin-bottom: 0;
+  display: inline;
+}
+     
 }

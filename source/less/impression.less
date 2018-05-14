@@ -1,157 +1,142 @@
 .impression {
-    border-top: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
 }
 
 .impression__title {
-    font-size: 18px;
-    line-height: 26px;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 48px;
-    padding-top: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 48px;
+  padding-top: 25px;
 }
 
 .impression__radio-item {
-    padding-bottom: 52px;
-    text-align: left;
-    margin-left: 20px;
+  padding-bottom: 52px;
+  text-align: left;
+  margin-left: 15px;
 }
 
 .impression__radio-button {
-    position: absolute;
-      z-index: -1;
-      opacity: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .impression__radio-text {
-    font-size: 18px;
-    line-height: 26px;
-    color: black;
-    font-weight: bold;
-   
-    
-    text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
 .impression__radio-button + .impression__radio-text {
-    position: relative;
-    padding: 12px 0 0 75px;
-    cursor: pointer;
+  position: relative;
+  padding: 12px 0 0 72px;//75
+  cursor: pointer;
 }
 
 .impression__radio-button + .impression__radio-text:before {        // Большой кружочек
-    content: '';
-      position: absolute;
-      top: -3px;
-      left: 0;
-      width: 56px;
-      height: 55px;
-      border: 1px solid #f2f2f2;
-      border-radius: 50%;
-      background: #f2f2f2;
-    
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 56px;
+  height: 55px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  background: #f2f2f2; 
 }
 
 .impression__radio-text:hover:before {
-    background: #e5e5e5;
+  background: #e5e5e5;
 }
 
 .impression__radio-text:active:before {
-    background: #d5d5d5;
+  background: #d5d5d5;
 }
 
 .impression__radio-button + .impression__radio-text:after {     // Маленький кружочек
-    content: '';
-      position: absolute;
-      top: 15px;
-      left: 19px;
-      width: 22px;
-      height: 21px;
-      border-radius: 50%;
-      background: #333333;
-      
-      opacity: 0;
-      transition: .2s;
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 19px;
+  width: 22px;
+  height: 21px;
+  border-radius: 50%;
+  background: #333333;
+  opacity: 0;
+  transition: .2s;
 }
 
 
 .impression__radio-text:active:after {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .impression__radio-button:checked + .impression__radio-text:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .impression__radio-button:focus + .impression__radio-text:before {
-    border: 1px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
-@media screen and (min-width: @tablet-width) {  //768px
+@media screen and (min-width: @tablet-width) {  
     
-    .impression {
-        display: flex;
-        flex-direction: column;
-        
-        border-right: 1px solid #dbdbdb;
-        border-top: none;
-        flex-basis: 50%;
-        order: -1;
-        
-        
-    }
+.impression {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #dbdbdb;
+  border-top: none;
+  flex-basis: 49%;
+  order: -1;
+  height: 325px;
+}
     
-    .impression__title {
-        padding-top: 0;
-        font-size: 21px;
-    }
+.impression__title {
+  padding-top: 0;
+  padding-bottom: 85px;
+  font-size: 21px;
+  text-align: left;
+}
     
-    .impression__radio-item {
-        padding-bottom: 52px;
-        text-align: left;
-        margin-left: 0px;
-        
-        &--last {
-            padding-bottom: 21px;
-        }
-    }
-   
+.impression__radio-item {
+  padding-bottom: 52px;
+  text-align: left;
+  margin-left: 0;
+&--last {
+  padding-bottom: 21px;
+}
+}
+    
 }
 
-
-
-@media screen and (min-width: @desktop-width) { //1200px
+@media screen and (min-width: @desktop-width) { 
+        
+.impression__radio-item {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 62px;
+  text-align: left; 
+&--last {
+  padding-bottom: 0;
+}  
+}
     
-    .impression__title {
-        
-        text-align: center;
-        margin-bottom: 57px;
-    }
-    
-    .impression__radio-item {
-        margin-left: 20px;
-        font-size: 18px;
-        line-height: 26px;
-        padding-bottom: 52px;
-        text-align: left;
-        
-    }
-    
-    .impression {
-        display: flex;
-        flex-direction: column;
-        
-        flex-wrap: wrap;
-        
-        flex-basis: 48%;
-        
-        padding-right: 15px;
-       // padding-left: 54px;
-        
-        width: 480px;
-        order: -1;
-    }
+.impression {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 48%;
+  padding-right: 15px;
+  width: 480px;
+  order: -1;
+  height: 320px;
+}
     
 }
