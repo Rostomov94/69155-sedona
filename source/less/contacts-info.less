@@ -16,7 +16,6 @@
 
 .contacts-info__form {
   margin-bottom: 20px;
-  display: block;
 }
 
 .contacts-info__text {      
@@ -25,6 +24,8 @@
   text-transform: uppercase;
   color: @litle-text;
   margin-left: 22px;
+  margin-bottom: 13px;
+  display: block;
 }
 
 .contacts-info__field {
@@ -36,8 +37,9 @@
   color: black;
   border: 4px solid @sedona-form;
   padding-left: 22px;
-  margin-top: 15px;
   z-index: 1;
+  float: none;
+
     
 &:hover {
   background-color: #e5e5e5;
@@ -62,13 +64,13 @@
 }
 
 .contacts-info__wrapper {
-  position: relative;
-
+ position: relative;
+ display: inline-block; //!!!!
 &::before {
   content: '';
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 0;
   width: 58px;
   height: 65px;
   background-color: #e6e6e6; 
@@ -82,7 +84,7 @@
 }
         
 &--mail::before {
-  background-image: url(/img/icon-mail.svg);  
+  background-image: url(/img/icon-mail.svg); 
 }
 }
 
@@ -111,6 +113,7 @@
     
 .contacts-info__form {
   padding-left: 0;
+  margin-bottom: 28px;
 }
     
 .contacts-info__field {
@@ -120,7 +123,6 @@
   padding-left: 22px;
   border: 4px solid @sedona-form;
   margin: 0 auto;
-  margin-top: 10px;
 
 &:hover {
   background-color: #e5e5e5;
@@ -142,16 +144,15 @@
 }
 
 @media screen and (min-width: @desktop-width) { 
+ 
+.contacts-info__title {
+  padding-bottom: 80px;
+}
     
-.contacts-info__wrapper {
-&::before {
-  top: -22px;   
-}
-}
-  
 .contacts-info__text {
   margin-left: 0;
   padding-right: 12px;
+  display: inline;
 }
     
 .contacts-info__form {
@@ -160,13 +161,12 @@
         
 &--mail {
   width: 480px;
-  padding-left: 78px;
+  padding-left: 73px; //78px
 }
 }
     
 .contacts-info__input-block {
   display: flex;
-  flex-basis: 100%;
 }
     
 .contacts-info__span {

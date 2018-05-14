@@ -1,6 +1,6 @@
 .main__information {
   margin-top: 46px;
-  margin-bottom: 33.5px; 
+  margin-bottom: 50px; 
 }
 
 .main {
@@ -10,25 +10,6 @@
 .main__city-info {
   display: flex;
   flex-direction: column;  
-}
-
-@media screen and (min-width: @tablet-width) {  
-    
-.main__city-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-        
-&--briefly {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 33%;
-} 
-} 
-    
 }
 
 .main__leisure {
@@ -60,10 +41,6 @@
   margin-top: 25px;
 }
 
-.main__emotions {
-  margin-top: 25px;
-}
-
 .main__photo-and-video {
   padding-top: 44px;
 }
@@ -74,4 +51,63 @@
 
 .main__video-player {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: @tablet-width) {  
+    
+.main__video {
+  margin-top: 67px;
+}
+    
+.main__photo-and-video {
+  padding-top: 76px;
+}
+    
+.main__impression {
+  margin-top: 0;
+}
+
+.main__leisure {
+  margin-bottom: 65.5px;
+}
+    
+.main__information {
+  margin-top: 54px;
+  margin-bottom: 57px; 
+}
+
+.main__name-form {
+  margin-top: 0;
+}
+    
+.main__city-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+        
+&--briefly {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+} 
+} 
+    
+}
+
+@media screen and (min-width: @desktop-width) { 
+.main__leisure {
+  margin-bottom: 82.5px;
+}  
+
+.main__photo-and-video {
+  padding-top: 113px;
+}
+    
+.main__video {
+    margin-top: 76px;
+}
+    
 }

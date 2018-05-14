@@ -39,7 +39,6 @@
   },
   "main": "gulpfile.js",
   "dependencies": {
-    "normalize.css": "^8.0.0",
     "csso": "^3.5.0"
   },
   "repository": {
