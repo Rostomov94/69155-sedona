@@ -14,26 +14,15 @@
   border: 0;
   cursor: pointer;
   z-index: 10;
- 
-    &::before {
-        //transform: rotate(45deg);
-       // color: white;
-    }
-    
-  
-    &:after {
-        
-        //background-image: url('/img/icon-menu.svg');
-        fill: blue;
-        stroke: blue;
-    }
-    
-    &:active:before {
-        
-        //background-image: url('/img/icon-menu.svg');
-        //fill: blue;
-    }
-    
+  fill: white;
+}
+
+.nav__icon-hide {
+  display: none;
+}
+
+.nav__icon-visible {
+  display: inline-block;
 }
 
 .nav__list--closed {
@@ -75,7 +64,7 @@
 }
 }
 
-.nav__toggle--closed svg{ 
+.nav__toggle svg{ 
   position: absolute;
   top: 29%;
   right: 30%;

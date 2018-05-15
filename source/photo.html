@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/picturefill.js" async="true"></script>
     <script>document.createElement( "picture" );</script>
@@ -16,11 +15,18 @@
 <div class="page-wrapper">
 <header class="header">
 <nav class="nav header__nav">    
-  <button class="nav__toggle">
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">                
-    <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+    <button class="nav__toggle">
+    <svg class="nav__icon--cross nav__icon-visible" fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">           
+        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
     </svg>
-  </button>  
+    <svg class="nav__icon--gamburger nav__icon-hide" fill="#81b3d2" id="Layer_199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+      <g>
+        <rect width="22.928" height="3.964"/>
+        <rect y="9.009" width="22.928" height="3.964"/>
+        <rect y="18.018" width="22.928" height="3.964"/>
+      </g>
+    </svg>
+  </button> 
   <ul class="nav__list nav__list--open"> 
     <li class="nav__list-item"> 
       <a class="nav__list-link" href="index.html">Главная</a>
@@ -195,7 +201,9 @@
         </svg>
       </button>
     <div class="video-player__progress-bar">
-      <input class="video-player__range" type="range" min="0" max="100" step="1" value="10"> 
+      <div class="video-player__line">
+        <div class="video-player__tumbler"></div>
+      </div>
     </div>
     <button class="video-player__sub">
       <svg id="Layer_19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
