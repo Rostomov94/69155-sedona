@@ -88,11 +88,28 @@
   flex-basis: 50%;  
 }
     
+    
+.name-form__name-field::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+  color: rgba(0, 0, 0, 1); 
+} 
+.name-form__name-field::-moz-placeholder { /* Firefox 19+ */ 
+  color: rgba(0, 0, 0, 1); 
+} 
+.name-form__name-field:-ms-input-placeholder { /* IE 10+ */ 
+  color: rgba(0, 0, 0, 1); 
+} 
+.name-form__name-field:-moz-placeholder { /* Firefox 18- */ 
+  color: rgba(0, 0, 0, 1); 
+    opacity: 1; //?
+}
+    
+    
+    
 .name-form__name-field {
   width: 153px;
   border: 4px solid @sedona-form;
   margin-bottom: 0;
-  height: 55px;
+  height: 55px;    
 &--first {
   width: 190px;
 }
