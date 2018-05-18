@@ -29,12 +29,11 @@ gulp.task("images", function() {
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
-    .pipe(gulp-plumber())
+    .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp-rename())
     .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
