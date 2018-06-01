@@ -12,7 +12,7 @@
   text-align: center;
   font-weight: bold;
   padding-bottom: 36px;
-    padding-top: 19px;
+  padding-top: 19px;
 }
 
 .impression__radio-item {
@@ -32,16 +32,16 @@
   color: black;
   font-weight: bold;
   text-align: center;
-
 }
 
-.impression__radio-button + .impression__radio-text {
+.impression__radio-button+.impression__radio-text {
   position: relative;
   padding: 14px 0 0 78px;
   cursor: pointer;
 }
 
-.impression__radio-button + .impression__radio-text:before {        // Большой кружочек
+.impression__radio-button+.impression__radio-text:before {
+  // Большой кружочек
   content: '';
   position: absolute;
   top: -1px;
@@ -50,7 +50,7 @@
   height: 54px;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
-  background: #f2f2f2; 
+  background: #f2f2f2;
 }
 
 .impression__radio-text:hover:before {
@@ -61,7 +61,8 @@
   background: #d5d5d5;
 }
 
-.impression__radio-button + .impression__radio-text:after {     // Маленький кружочек
+.impression__radio-button+.impression__radio-text:after {
+  // Маленький кружочек
   content: '';
   position: absolute;
   top: 16px;
@@ -71,109 +72,95 @@
   border-radius: 50%;
   background: #333333;
   opacity: 0;
-  //transition: .2s;
 }
 
 .impression__radio-text:active:after {
   opacity: 0.3;
 }
 
-.impression__radio-button:checked + .impression__radio-text:after {
+.impression__radio-button:checked+.impression__radio-text:after {
   opacity: 1;
 }
 
-.impression__radio-button:focus + .impression__radio-text:before {
+.impression__radio-button:focus+.impression__radio-text:before {
   border: 1px solid #f2f2f2;
 }
 
-@media screen and (min-width: @tablet-width) {  
-    
-.impression {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: @tablet-width) {
+  .impression {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-  border-right: 1px solid red;
-  border-top: none;
-  flex-basis: 50%;
-  order: -1;
-  padding-right: 0;
-  padding-left: 0;
-  min-height: 296px;
-}
- 
-.impression__radio-button + .impression__radio-text:before {        // Большой кружочек
-  left: 4px;
-}
-
-.impression__radio-button + .impression__radio-text:after {     // Маленький кружочек
-  left: 22px;
-}
-
-.impression__radio-button + .impression__radio-text {
-  padding: 13px 0 0 81px;
-}
-    
-.impression__title {
-  padding-top: 0;
-  padding-bottom: 72px;
-  font-size: 21px;
-  text-align: left;
+    border-right: 1px solid #dbdbdb;
+    border-top: none;
+    flex-basis: 50%;
+    order: -1;
+    padding-right: 0;
+    padding-left: 0;
+    min-height: 296px;
+  }
+  .impression__radio-button+.impression__radio-text:before {
+    // Большой кружочек
+    left: 4px;
+  }
+  .impression__radio-button+.impression__radio-text:after {
+    // Маленький кружочек
+    left: 22px;
+  }
+  .impression__radio-button+.impression__radio-text {
+    padding: 13px 0 0 81px;
+  }
+  .impression__title {
+    padding-top: 0;
+    padding-bottom: 72px;
+    font-size: 21px;
+    text-align: left;
     margin-left: 4px;
-}
-    
-.impression__radio-item {
-  padding-bottom: 53px;
-  text-align: left;
-  margin-left: 0;
-&--last {
-  padding-bottom: 0;
-}
-}
-    
+  }
+  .impression__radio-item {
+    padding-bottom: 53px;
+    text-align: left;
+    margin-left: 0;
+    &--last {
+      padding-bottom: 0;
+    }
+  }
 }
 
-@media screen and (min-width: @desktop-width) { 
-    
-.impression__title { 
-  padding-bottom: 73px;
+@media screen and (min-width: @desktop-width) {
+  .impression__title {
+    padding-bottom: 73px;
     text-align: center;
     margin-right: 62px;
     padding-top: 3px;
-        padding-left: 9px;
-}
-    
-.impression__radio-button + .impression__radio-text {
+    padding-left: 9px;
+  }
+  .impression__radio-button+.impression__radio-text {
     padding: 14px 0 0 79px;
-}
-
-.impression__radio-button + .impression__radio-text:before {
+  }
+  .impression__radio-button+.impression__radio-text:before {
     left: 2px;
-}
-
-.impression__radio-button + .impression__radio-text:after {
+  }
+  .impression__radio-button+.impression__radio-text:after {
     left: 20px;
-}
-
-.impression__radio-item {
-  margin-left: 1px;
-
-  font-size: 18px;
-  line-height: 26px;
-  padding-bottom: 52px;
-  text-align: left; 
-&--last {
-  padding-bottom: 0;
-}  
-}
-    
-.impression {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-  width: 480px;
-  order: -1;
-  height: 302px;
-}
-    
+  }
+  .impression__radio-item {
+    margin-left: 1px;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 52px;
+    text-align: left;
+    &--last {
+      padding-bottom: 0;
+    }
+  }
+  .impression {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    width: 480px;
+    order: -1;
+    height: 302px;
+  }
 }

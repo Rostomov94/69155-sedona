@@ -6,83 +6,69 @@
   background-position: center 100%;
   background-repeat: no-repeat;
   background-size: 239% auto;
-    
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  background-image: url(../img/bg-back-mobile@2x.jpg);
-} 
-    
-&:after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: -1px;
-  height: 27px;
-  background-image: url(../img/bg-intro-triangle-mobile.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 322px 27px;
-}   
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    height: 27px;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 322px 27px;
+  }
 }
 
 .intro-form__img {
-    padding-top: 52px;
-    padding-bottom: 65px;
-    display: block;
-    margin: 0 auto;
-    width: 228px;
-    height: 39px;
+  padding-top: 52px;
+  padding-bottom: 65px;
+  display: block;
+  margin: 0 auto;
+  width: 228px;
+  height: 39px;
 }
 
-
 @media screen and (min-width: @tablet-width) {
-
   .intro-form {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center 98%;
     background-repeat: no-repeat;
     background-size: 100%;
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url(../img/bg-back-tablet@2x.jpg);
     }
-
     &:after {
-    background-size: 100% 57px;
-    height: 57px;
-    background-image: url(../img/bg-intro-triangle-tablet.svg);
+      background-size: 100% 57px;
+      height: 57px;
+      background-image: url(../img/bg-intro-triangle-tablet.svg);
+    }
   }
-
-  }
-
   .intro-form__img {
     padding-top: 70px;
     padding-bottom: 91px;
     width: 464px;
     height: 128px;
-}
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
-  .intro-form__img { 
+  .intro-form__img {
     padding-top: 78px;
     padding-bottom: 94px;
   }
-
   .intro-form {
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: center 99%;
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url(../img/bg-back-desktop@2x.jpg);
     }
-
     &:after {
-    background-image: url(../img/bg-intro-triangle-desktop.svg);
+      background-image: url(../img/bg-intro-triangle-desktop.svg);
+    }
   }
-
-  }
-
-
 }
 
 

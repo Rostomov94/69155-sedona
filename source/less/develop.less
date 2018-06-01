@@ -9,7 +9,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: black;
-  padding-right: 12px;  
+  padding-right: 12px;
   text-align: center;
 }
 
@@ -17,41 +17,31 @@
   height: 100%;
   width: 27px;
   height: 34px;
-  
-&:hover {
-  fill: #81b3d2;
-}
-        
-&:active {
-  fill: rgba(178, 178, 178, 30%);
-}
+  &:hover {
+    fill: #81b3d2;
+  }
+  &:active {
+    fill: rgba(178, 178, 178, 30%);
+  }
 }
 
 .develop__text {
   padding-top: 4px;
 }
 
-
-@media screen and (min-width: @tablet-width) {  
-.develop {
-  padding-top: 0;
-  //  padding-top: 35px;
-  padding-right: 3px;
+@media screen and (min-width: @tablet-width) {
+  .develop {
+    padding-top: 0;
+    padding-right: 3px;
+  }
+  .develop__text {
+    padding-top: 3px;
+    padding-right: 14px;
+  }
 }
 
-.develop__text {
-  padding-top: 3px;
-  padding-right: 14px;
-}
-
-}
-
-@media screen and (min-width: @desktop-width) {  
-
-.develop {
+@media screen and (min-width: @desktop-width) {
+  .develop {
     padding-right: 10px;
-  //padding-top: 32px;
-}
-
-
+  }
 }

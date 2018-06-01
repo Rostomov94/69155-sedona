@@ -10,55 +10,43 @@
   display: inline-block;
   vertical-align: top;
   margin-right: 6px;
-    padding: 0;
+  padding: 0;
   background-color: #81b3d2;
   cursor: pointer;
   fill: white;
   box-sizing: content-box;
-svg {
-  height: 100%;     
-}
-    
-&:hover {
-  background-color: #669ec0;
-}
-        
-&:active {
-  background-color: #5496bd;
-}
-    
-&:active svg {
-  fill: rgba(136, 182, 209, 30%);
-}
-    
-&:last-child {
-  margin-right: 0;
-}
-    
+  svg {
+    height: 100%;
+  }
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+  }
+  &:active svg {
+    fill: rgba(136, 182, 209, 30%);
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-
-
-
-@media screen and (min-width: @tablet-width) {  
-    
-.soc-button {
-  //padding-bottom: 35px;
-  //padding-top: 35px;
-  padding-bottom: 0;
-  padding-top: 0;
-  margin-bottom: 0;
-  padding-right: 8px;
-  align-items: center;
-}
-     
+@media screen and (min-width: @tablet-width) {
+  .soc-button {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-right: 8px;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
-    .soc-button {
+  .soc-button {
     padding-left: 40px;
-    padding-right: 55px; 
-        }
+    padding-right: 55px;
+  }
 }
 
   

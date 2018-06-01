@@ -12,18 +12,15 @@
   display: block;
   width: 100%;
   height: 260px;
-
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-city-mobile@2x.jpg);
-} 
-    
-&--devil-bridge {
-  background-image: url(../img/main-bridge-mobile@1x.jpg);
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-bridge-mobile@2x.jpg);
-}    
-}
-    
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/main-city-mobile@2x.jpg);
+  }
+  &--devil-bridge {
+    background-image: url(../img/main-bridge-mobile@1x.jpg);
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/main-bridge-mobile@2x.jpg);
+    }
+  }
 }
 
 .city-info__title {
@@ -36,10 +33,9 @@
   padding-bottom: 9.5px;
   padding-top: 38px;
   font-weight: bold;
-    
-    &--devil-bridge {
-            padding-top: 39px;
-    }
+  &--devil-bridge {
+    padding-top: 39px;
+  }
 }
 
 .city-info__number {
@@ -60,143 +56,111 @@
   padding-bottom: 41.5px;
   width: 287px;
   margin: auto;
-&--devil-bridge {
-  padding-bottom: 39px;
-} 
+  &--devil-bridge {
+    padding-bottom: 39px;
+  }
 }
 
-@media screen and (min-width: @tablet-width) {  
-.city-info__block-photo {
-  background-image: url(../img/main-city-tablet@1x.jpg);
-  flex-basis: 68%;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-    
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-city-tablet@2x.jpg);
-} 
-    
-&--devil-bridge {
-  background-image: url(../img/main-bridge-tablet@1x.jpg);
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-bridge-tablet@2x.jpg);
-}    
-}
-    
-}
-    
-.city-info__title {
-  font-size: 21px;
-  line-height: 26px;
-  width: 122px;
-  padding-top: 45px;
-    padding-bottom: 9.5px;
-    
-&--devil-bridge {
-  width: 151px;
-  margin: auto;
-    padding-top: 45px;
-
-}
-    
-}
-    
-.city-info__number {
-  padding-bottom: 22.5px;
-}
-    
-.city-info__description { 
-  padding-bottom: 43px;
-  width: 162px;  
-    
-&--devil-bridge { 
-  margin: auto;
-  width: 178px;
-}
-}
-    
-    
-.city-info__block {
-  flex-basis: 34%;
-
-&--devil-bridge {
-  order: 2;    
-}  
-}
-      
-}
-
-@media screen and (min-width: @desktop-width) { 
-    
-.city-info__block-photo {
-  background-image: url(../img/main-city-desktop@1x.jpg);
-      flex-basis: 66.7%;  
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-city-desktop@2x.jpg);
-} 
-        
-&--devil-bridge {
-  background-image: url(../img/main-bridge-desktop@1x.jpg);
-            
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {  
-  background-image: url(../img/main-bridge-desktop@2x.jpg);
-} 
-            
-}
-}
-    
-.city-info__block {
-  flex-basis: 30%;
-}
-    
-.city-info__number {
-  padding-bottom: 22px;
-       margin-left: 169px;
-    width: 65px;
-    
+@media screen and (min-width: @tablet-width) {
+  .city-info__block-photo {
+    background-image: url(../img/main-city-tablet@1x.jpg);
+    flex-basis: 68%;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/main-city-tablet@2x.jpg);
+    }
     &--devil-bridge {
-  margin-left: 128px;
+      background-image: url(../img/main-bridge-tablet@1x.jpg);
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/main-bridge-tablet@2x.jpg);
+      }
+    }
+  }
+  .city-info__title {
+    font-size: 21px;
+    line-height: 26px;
+    width: 122px;
+    padding-top: 45px;
+    padding-bottom: 9.5px;
+    &--devil-bridge {
+      width: 151px;
+      margin: auto;
+      padding-top: 45px;
+    }
+  }
+  .city-info__number {
+    padding-bottom: 22.5px;
+  }
+  .city-info__description {
+    padding-bottom: 43px;
+    width: 162px;
+    &--devil-bridge {
+      margin: auto;
+      width: 178px;
+    }
+  }
+  .city-info__block {
+    flex-basis: 34%;
+    &--devil-bridge {
+      order: 2;
+    }
+  }
 }
-}
-    
-.city-info__img {
-height: 248px;
-width: 100%;
-}
-    
-.city-info__title {
-  font-size: 21px;
-  line-height: 26px;
-  
+
+@media screen and (min-width: @desktop-width) {
+  .city-info__block-photo {
+    background-image: url(../img/main-city-desktop@1x.jpg);
+    flex-basis: 66.7%;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/main-city-desktop@2x.jpg);
+    }
+    &--devil-bridge {
+      background-image: url(../img/main-bridge-desktop@1x.jpg);
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/main-bridge-desktop@2x.jpg);
+      }
+    }
+  }
+  .city-info__block {
+    flex-basis: 30%;
+  }
+  .city-info__number {
+    padding-bottom: 22px;
+    margin-left: 169px;
+    width: 65px;
+    &--devil-bridge {
+      margin-left: 128px;
+    }
+  }
+  .city-info__img {
+    height: 248px;
+    width: 100%;
+  }
+  .city-info__title {
+    font-size: 21px;
+    line-height: 26px;
     margin-left: 140px;
-
-  padding-top: 51px;
-  padding-bottom: 9px;
-    
-&--devil-bridge {
-  margin: 0;
-    padding-left: 85px;
-        padding-top: 53px;
-}
-}
-    
-.city-info__description { 
-
+    padding-top: 51px;
+    padding-bottom: 9px;
+    &--devil-bridge {
+      margin: 0;
+      padding-left: 85px;
+      padding-top: 53px;
+    }
+  }
+  .city-info__description {
     padding-left: 70px;
     padding-bottom: 59px;
     margin: 0;
-   width: 270px;
-
-
-&--devil-bridge { 
+    width: 270px;
+    &--devil-bridge {
       padding-left: 37px;
-    padding-bottom: 57px;
+      padding-bottom: 57px;
+    }
+  }
 }
-}
-    
-}
-
 
     
 
