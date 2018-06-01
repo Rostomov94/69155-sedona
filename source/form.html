@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/picturefill.js" async></script>
   <script>document.createElement( "picture" );</script>
@@ -31,21 +35,21 @@
   </div> 
 </div>
 <div class="page-wrapper"> 
-<header class="header">           
+<header class="header">        
 <nav class="nav header__nav">    
-  <button class="nav__toggle">
-    <svg class="nav__icon nav__icon--cross nav__icon-visible" fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">           
-        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+    <button class="nav__toggle nav__toggle--nojs">
+    <svg class="nav__icon nav__icon--cross nav__icon-hide" fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">           
+      <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
     </svg>
-    <svg class="nav__icon nav__icon--gamburger nav__icon-hide" fill="#81b3d2" id="Layer_199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+    <svg class="nav__icon nav__icon--gamburger nav__icon-visible" fill="#81b3d2" id="Layer_199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
       <g>
         <rect width="22.928" height="3.964"/>
         <rect y="9.009" width="22.928" height="3.964"/>
         <rect y="18.018" width="22.928" height="3.964"/>
       </g>
     </svg>
-  </button>   
-  <ul class="nav__list nav__list--open"> 
+  </button> 
+  <ul class="nav__list"> 
     <li class="nav__list-item"> 
       <a class="nav__list-link" href="index.html">Главная</a>
     </li>
@@ -73,9 +77,9 @@
 </div>
 </header>
 <main class="main">
-<div class="intro-photo">                   
-  <img class="intro-photo__img" src="img/text-sedona.svg" alt="Sedona">
-</div>       
+<div class="intro-form intro-form">                   
+  <img class="intro-form__img" src="img/text-sedona.svg" alt="Sedona">
+</div>    
 <div class="sentence main__sentence">
   <h2 class="sentence__intro">Оставьте свой отзыв</h2>    
   <p class="sentence__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -86,15 +90,15 @@
   <h2 class="name-form__title">Представьтесь:</h2> 
   <label class="name-form__item" for="name-form-one">
     <span class="name-form__name">Имя<sup>*</sup>:</span>
-    <input class="name-form__name-field name-form__name-field--first" id="name-form-one" name="username" type="text" value="" required placeholder="Петр">
+    <input class="name-form__name-field name-form__name-field--one" id="name-form-one" name="username" type="text" required placeholder="Петр">
   </label>
   <label class="name-form__item" for="name-form-two">
-    <span class="name-form__name">Фамилия<sup>*</sup>:</span>
-    <input class="name-form__name-field" id="name-form-two" name="username" type="text" value="" required placeholder="Иванов">
+    <span class="name-form__name name-form__name--two">Фамилия<sup>*</sup>:</span>
+    <input class="name-form__name-field" id="name-form-two" name="username" type="text" required placeholder="Иванов">
   </label>
   <label class="name-form__item" for="name-form-three">
-    <span class="name-form__name">Отчество:</span>
-    <input class="name-form__name-field name-form__name-field--last" id="name-form-three" name="username" type="text" value="" required placeholder="Александрович">
+    <span class="name-form__name name-form__name--three">Отчество:</span>
+    <input class="name-form__name-field name-form__name-field--three" id="name-form-three" name="username" type="text" placeholder="Александрович">
   </label>
 </div>          
 <div class="contacts-info main__contacts-info">

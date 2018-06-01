@@ -1,5 +1,7 @@
 .attraction {
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid #e5e5e5;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .attraction__title {
@@ -8,7 +10,7 @@
   color: black;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
   font-weight: bold;
   padding-top: 19px;
 }
@@ -39,7 +41,7 @@
 
 .attraction__checkbox + .attraction__checkbox-text {
   position: relative;
-  padding: 12px 0 0 79px;
+  padding: 12px 0 0 78px;
   cursor: pointer;
 }
 
@@ -47,7 +49,7 @@
   content: '';
   position: absolute;
   top: -4px;
-  left: 0;
+  left: -1px;
   right: 2px;
   width: 56px;
   height: 56px;
@@ -85,12 +87,14 @@
 @media screen and (min-width: @tablet-width) {  
 .attraction {
   flex-basis: 100%;
-  margin-top: 57px;
+  margin-top: 38px;
+  padding-left: 0;
+  padding-right: 0;
 }
     
 .attraction__checkbox + .attraction__checkbox-text {
 
-  padding: 11px 0 0 82px;
+  padding: 11px 0 0 80px;
 
 }
     
@@ -107,15 +111,15 @@
 .attraction__title {
   font-size: 21px;
   background-color: white;
-  width: 350px;
+  width: 400px;
   margin: auto;
-  margin-top: -48px;
+  margin-top: -45px;
   padding-bottom: 56px;
 }
     
 .attraction__radio-item {
     padding-bottom: 63px;
-    margin-right: 64px;
+    margin-right: 68px;
     
     &--last {
         margin-left: 18px;
@@ -129,7 +133,7 @@
 @media screen and (min-width: @desktop-width) { 
     
     .attraction {
-            margin-top: 55px;
+            margin-top: 38px;
     }
      
     .attraction__title { 

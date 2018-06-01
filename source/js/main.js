@@ -11,15 +11,31 @@ Nav__toggle.addEventListener('click', function () {
 	}
 });
 
+Nav.classList.add('nav__list--closed');
+Nav__toggle.classList.remove('nav__toggle--nojs');
+
+
+
+
 var NavIconGamburger = document.querySelector('.nav__icon--gamburger');
 var NavIconCross = document.querySelector('.nav__icon--cross');
 
-Nav__toggle.addEventListener('click', function () {
+Nav__toggle.addEventListener('click', function () {				
 	if (NavIconGamburger.classList.contains('nav__icon-hide')) {
 		NavIconGamburger.classList.remove('nav__icon-hide');
 		NavIconGamburger.classList.add('nav__icon-visible');
 	} else {
 		NavIconGamburger.classList.remove('nav__icon-visible');
 		NavIconGamburger.classList.add('nav__icon-hide');
+	}
+});
+
+Nav__toggle.addEventListener('click', function () {				
+	if (NavIconCross.classList.contains('nav__icon-hide')) {
+		NavIconCross.classList.remove('nav__icon-hide');
+		NavIconCross.classList.add('nav__icon-visible');
+	} else {
+		NavIconCross.classList.remove('nav__icon-visible');
+		NavIconCross.classList.add('nav__icon-hide');
 	}
 });

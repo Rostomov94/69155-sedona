@@ -1,8 +1,7 @@
 .soc-button {
-  margin-bottom: 35px;
+  padding-bottom: 39px;
   text-align: center;
-  display: inline;
-
+  font-size: 0px;
 }
 
 .soc-button__social-btn {
@@ -15,7 +14,7 @@
   background-color: #81b3d2;
   cursor: pointer;
   fill: white;
-  
+  box-sizing: content-box;
 svg {
   height: 100%;     
 }
@@ -29,7 +28,7 @@ svg {
 }
     
 &:active svg {
-  opacity: 0.3;
+  fill: rgba(136, 182, 209, 30%);
 }
     
 &:last-child {
@@ -44,10 +43,13 @@ svg {
 @media screen and (min-width: @tablet-width) {  
     
 .soc-button {
-  padding-bottom: 35px;
-  padding-top: 35px;
+  //padding-bottom: 35px;
+  //padding-top: 35px;
+  padding-bottom: 0;
+  padding-top: 0;
   margin-bottom: 0;
-
+  padding-right: 8px;
+  align-items: center;
 }
      
 }

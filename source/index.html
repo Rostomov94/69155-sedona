@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/picturefill.js" async></script>
   <script>document.createElement( "picture" );</script>
@@ -13,13 +17,15 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 <div class="page-wrapper"> 
+
+  
 <header class="header">        
 <nav class="nav header__nav">    
-    <button class="nav__toggle">
-    <svg class="nav__icon nav__icon--cross nav__icon-visible" fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">           
-        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+    <button class="nav__toggle nav__toggle--nojs">
+    <svg class="nav__icon nav__icon--cross nav__icon-hide" fill="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">           
+      <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
     </svg>
-    <svg class="nav__icon nav__icon--gamburger nav__icon-hide" fill="#81b3d2" id="Layer_199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+    <svg class="nav__icon nav__icon--gamburger nav__icon-visible" fill="#81b3d2" id="Layer_199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
       <g>
         <rect width="22.928" height="3.964"/>
         <rect y="9.009" width="22.928" height="3.964"/>
@@ -27,7 +33,7 @@
       </g>
     </svg>
   </button> 
-  <ul class="nav__list nav__list--open"> 
+  <ul class="nav__list"> 
     <li class="nav__list-item nav__list-item--active"> 
       <a class="nav__list-link nav__list-link--active" href="index.html">Главная</a>
     </li>
@@ -53,7 +59,9 @@
     </picture>
   </a>
 </div>
-</header>      
+</header> 
+
+
 <main class="main">
 <div class="main__wrapper"> 
   <div class="intro-index main__intro-index">                   
@@ -95,6 +103,10 @@
     </div>
     <div class="city-info__block-photo city-info__block-photo--devil-bridge"></div>
   </div>
+
+
+
+
   <div class="reason main__reason">  
     <div class="reason-block">
       <h2 class="reason__title reason__title--area">Небольшая площадь</h2>    
@@ -112,12 +124,13 @@
       <p class="reason__description reason__description--tourists">Большинство едет в гранд каньон и толпится там</p>
     </div>
   </div>
+
+
+
   <div class="hotel-search main__hotel-search">
     <h2 class="hotel-search__title">Заинтересовались?</h2>
     <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <form action="/example/">
-      <button type="submit" class="hotel-search__button">найти гостиницу</button>
-    </form>
+      <a href="#" class="hotel-search__button">найти гостиницу</a>
     <div class="hotel-search__map-bg" id="map"></div>
   </div>       
 </div>
@@ -136,13 +149,11 @@
           </g>
          </g>
         </svg>
-      </a>
-      <a class="soc-button__social-btn" href="#">
+      </a><a class="soc-button__social-btn" href="#">
         <svg id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
         <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
         </svg> 
-      </a>
-      <a class="soc-button__social-btn" href="#">
+      </a><a class="soc-button__social-btn" href="#">
         <svg id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
         <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
         </svg>

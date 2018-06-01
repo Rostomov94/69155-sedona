@@ -15,6 +15,11 @@
   cursor: pointer;
   z-index: 10;
   fill: white;
+
+&--nojs {
+  display: none;
+}
+
 }
 
 .nav__icon-hide {
@@ -36,25 +41,20 @@
 .nav__list-item {
   background-color: @sedona-blue;
   list-style-type: none;
-
   text-align: center;
-
 }
 
 .nav__list-link {
-
   background-color: @sedona-blue;
   text-decoration: none;
   color: white;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db; 
-
-    padding-bottom: 14px;
-    padding-top: 17px;
+    padding-bottom: 15px;;
+    padding-top: 16px;
   text-transform: uppercase;
   color: white;
   font-size: 18px;
-  //line-height: 40px;
   font-weight: bold;
   display: block;
     
@@ -64,14 +64,14 @@
         
 &:active {
   background-color: #5496bd;
-  color: rgb(148, 185, 210);
+  color: rgba(148, 185, 210, 30%);
 }
 }
 
 .nav__icon { 
   position: absolute;
-  top: 29%;
-  right: 30%;
+    top: 30%;
+    right: 32%;
     
 &--gamburger {
   position: absolute;
@@ -91,7 +91,7 @@
     
 .nav__list {
   width: 768px;
-  display: flex;
+display: flex;
   flex-direction: row;
     height: 56px;
 }
@@ -115,30 +115,30 @@
   background-color: transparent;
   border-color: transparent;
   padding-bottom: 21px;
-  padding-top: 14px;
+  padding-top: 13px;
   text-decoration: none;
   color: black;
         
 &:hover {
-  background-color: white;
+  background-color: transparent;
   color: #8bb9d5;
 }
 
 &:active {
-  background-color: white;
-  color: rgba(206, 206, 206, 0.8);
+  background-color: transparent;
+  color: rgba(202, 202, 202, 30%);
 }
 }
     
 .nav__list-link--active {
-  color: rgba(118, 99, 87, 1.7);
+  color: #766357;
     
 &:hover {
   color: #604e43;
 }
             
 &:active {
-  color: rgba(219, 216, 213, 1.6);
+  color: rgba(219, 216, 213, 30%);
 }
 }
 }

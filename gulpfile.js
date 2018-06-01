@@ -41,8 +41,6 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-
-
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "source/",
