@@ -18,11 +18,11 @@ gulp.task("webp", function() {
 });
 
 gulp.task("images", function() {
-    return gulp.src("source/img/**/*.{png, jpg, svg}") 
+    return gulp.src("source/img/**/*.{png, jpg, svg}")
         .pipe(imagemin([
-            imagemin.optipng({optimizationlevel: 3}), 
+            imagemin.optipng({optimizationlevel: 3}),
             imagemin.jpegtran({progressive: true}),
-            imagemin.svgo()                           
+            imagemin.svgo()
         ]))
         .pipe(gulp.dest("source/img"));
 });
@@ -44,26 +44,12 @@ gulp.task("style", function() {
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "source/",
-    notify: false,  
+    notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload); 
+  gulp.watch("source/*.html").on("change", server.reload);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -34,15 +34,14 @@
   text-align: center;
 }
 
-.impression__radio-button+.impression__radio-text {
+.impression__radio-button + .impression__radio-text {
   position: relative;
   padding: 14px 0 0 78px;
   cursor: pointer;
 }
 
-.impression__radio-button+.impression__radio-text:before {
-  // Большой кружочек
-  content: '';
+.impression__radio-button + .impression__radio-text::before {
+  content: "";
   position: absolute;
   top: -1px;
   left: -1px;
@@ -53,17 +52,16 @@
   background: #f2f2f2;
 }
 
-.impression__radio-text:hover:before {
+.impression__radio-text:hover::before {
   background: #e5e5e5;
 }
 
-.impression__radio-text:active:before {
+.impression__radio-text:active::before {
   background: #d5d5d5;
 }
 
-.impression__radio-button+.impression__radio-text:after {
-  // Маленький кружочек
-  content: '';
+.impression__radio-button + .impression__radio-text::after {
+  content: "";
   position: absolute;
   top: 16px;
   left: 17px;
@@ -74,15 +72,15 @@
   opacity: 0;
 }
 
-.impression__radio-text:active:after {
+.impression__radio-text:active::after {
   opacity: 0.3;
 }
 
-.impression__radio-button:checked+.impression__radio-text:after {
+.impression__radio-button:checked + .impression__radio-text::after {
   opacity: 1;
 }
 
-.impression__radio-button:focus+.impression__radio-text:before {
+.impression__radio-button:focus + .impression__radio-text::before {
   border: 1px solid #f2f2f2;
 }
 
@@ -99,17 +97,19 @@
     padding-left: 0;
     min-height: 296px;
   }
-  .impression__radio-button+.impression__radio-text:before {
-    // Большой кружочек
+
+  .impression__radio-button + .impression__radio-text::before {
     left: 4px;
   }
-  .impression__radio-button+.impression__radio-text:after {
-    // Маленький кружочек
+
+  .impression__radio-button + .impression__radio-text::after {
     left: 22px;
   }
-  .impression__radio-button+.impression__radio-text {
+
+  .impression__radio-button + .impression__radio-text {
     padding: 13px 0 0 81px;
   }
+
   .impression__title {
     padding-top: 0;
     padding-bottom: 72px;
@@ -117,10 +117,12 @@
     text-align: left;
     margin-left: 4px;
   }
+
   .impression__radio-item {
     padding-bottom: 53px;
     text-align: left;
     margin-left: 0;
+
     &--last {
       padding-bottom: 0;
     }
@@ -135,25 +137,31 @@
     padding-top: 3px;
     padding-left: 9px;
   }
-  .impression__radio-button+.impression__radio-text {
+
+  .impression__radio-button + .impression__radio-text {
     padding: 14px 0 0 79px;
   }
-  .impression__radio-button+.impression__radio-text:before {
+
+  .impression__radio-button + .impression__radio-text::before {
     left: 2px;
   }
-  .impression__radio-button+.impression__radio-text:after {
+
+  .impression__radio-button + .impression__radio-text::after {
     left: 20px;
   }
+
   .impression__radio-item {
     margin-left: 1px;
     font-size: 18px;
     line-height: 26px;
     padding-bottom: 52px;
     text-align: left;
+
     &--last {
       padding-bottom: 0;
     }
   }
+
   .impression {
     display: flex;
     flex-direction: column;

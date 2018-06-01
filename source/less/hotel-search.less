@@ -38,9 +38,11 @@
   background-color: @sedona-blue;
   cursor: pointer;
   font-weight: bold;
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: rgba(148, 185, 210, 30%);
@@ -52,9 +54,10 @@
   height: 350px;
   margin: auto;
   margin-top: 65px;
-  background-image: url(/img/bg-map-mobile@1x.jpg);
+  background-image: url("/img/bg-map-mobile@1x.jpg");
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-image: url("../img/bg-map-mobile@2x.jpg");
     background-position: center;
     background-size: 100%;
   }
@@ -62,21 +65,25 @@
 
 @media screen and (min-width: @tablet-width) {
   .hotel-search__map-bg {
-    background-image: url(/img/bg-map-tablet@1x.jpg);
+    background-image: url("/img/bg-map-tablet@1x.jpg");
     margin-top: 74px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url(../img/bg-map-tablet@2x.jpg);
+      background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
+
   .hotel-search__title {
     font-size: 30px;
     padding-top: 55px;
     padding-bottom: 30px;
   }
+
   .hotel-search__description {
     padding-bottom: 59px;
     width: 460px;
   }
+
   .hotel-search__button {
     padding-right: 136px;
     padding-left: 136px;
@@ -88,20 +95,24 @@
 
 @media screen and (min-width: @desktop-width) {
   .hotel-search__map-bg {
-    background-image: url(/img/bg-map-desktop@1x.jpg);
+    background-image: url("/img/bg-map-desktop@1x.jpg");
     margin-top: 82px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url(../img/bg-map-desktop@2x.jpg);
+      background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
+
   .hotel-search__title {
     padding-top: 55px;
   }
+
   .hotel-search__description {
     padding-bottom: 64px;
     margin: auto;
     width: 435px;
   }
+
   .hotel-search__button {
     margin-bottom: 67px;
   }

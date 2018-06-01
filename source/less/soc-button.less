@@ -1,7 +1,7 @@
 .soc-button {
   padding-bottom: 39px;
   text-align: center;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .soc-button__social-btn {
@@ -15,18 +15,23 @@
   cursor: pointer;
   fill: white;
   box-sizing: content-box;
+
   svg {
     height: 100%;
   }
+
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
   }
+
   &:active svg {
     fill: rgba(136, 182, 209, 30%);
   }
+
   &:last-child {
     margin-right: 0;
   }
@@ -48,5 +53,3 @@
     padding-right: 55px;
   }
 }
-
-  

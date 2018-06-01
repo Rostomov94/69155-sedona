@@ -21,6 +21,7 @@
   color: black;
   text-align: left;
   padding-bottom: 54px;
+
   &--last {
     padding-bottom: 39px;
   }
@@ -38,14 +39,14 @@
   font-weight: bold;
 }
 
-.attraction__checkbox+.attraction__checkbox-text {
+.attraction__checkbox + .attraction__checkbox-text {
   position: relative;
   padding: 12px 0 0 78px;
   cursor: pointer;
 }
 
-.attraction__checkbox+.attraction__checkbox-text:before {
-  content: '';
+.attraction__checkbox + .attraction__checkbox-text::before {
+  content: "";
   position: absolute;
   top: -4px;
   left: -1px;
@@ -56,29 +57,29 @@
   background: #f2f2f2;
 }
 
-.attraction__checkbox+.attraction__checkbox-text:after {
-  content: '';
+.attraction__checkbox + .attraction__checkbox-text::after {
+  content: "";
   position: absolute;
-  transition: .2s;
+  transition: 0.2s;
   top: -2px;
   left: 2px;
   width: 26px;
   height: 20px;
 }
 
-.attraction__checkbox:checked+.attraction__checkbox-text:before {
+.attraction__checkbox:checked + .attraction__checkbox-text::before {
   background: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-size: 25px 26px;
 }
 
-.attraction__checkbox-text:hover:before {
+.attraction__checkbox-text:hover::before {
   background: #e5e5e5;
 }
 
-.attraction__checkbox-text:active:before {
+.attraction__checkbox-text:active::before {
   background: #d5d5d5;
   opacity: 0.4;
 }
@@ -90,9 +91,11 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .attraction__checkbox+.attraction__checkbox-text {
+
+  .attraction__checkbox + .attraction__checkbox-text {
     padding: 11px 0 0 80px;
   }
+
   .attraction__radio-block {
     width: 550px;
     margin-left: 100px;
@@ -100,6 +103,7 @@
     flex-wrap: wrap;
     align-content: center;
   }
+
   .attraction__title {
     font-size: 21px;
     background-color: white;
@@ -108,9 +112,11 @@
     margin-top: -45px;
     padding-bottom: 56px;
   }
+
   .attraction__radio-item {
     padding-bottom: 63px;
     margin-right: 68px;
+
     &--last {
       margin-left: 18px;
     }
@@ -121,20 +127,25 @@
   .attraction {
     margin-top: 38px;
   }
+
   .attraction__title {
     padding-bottom: 56px;
   }
+
   .attraction__checkbox-text {
     padding-left: 25px;
     font-weight: bold;
   }
+
   .attraction__radio-item {
     padding-bottom: 42px;
     margin-right: 0;
+
     &--last {
       margin-left: 0;
     }
   }
+
   .attraction__radio-block {
     width: 960px;
     margin: auto;
