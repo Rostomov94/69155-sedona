@@ -1,16 +1,12 @@
 .form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
-
-@media screen and (min-width: @tablet-width) {  //768px
-   .form {
-        display: flex;
-        flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-around;
-    } 
-    
-   
-}
-

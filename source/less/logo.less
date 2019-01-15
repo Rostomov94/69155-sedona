@@ -1,47 +1,29 @@
 .logo {
-    position: relative;
-    width: 102px;
-    height: 56px;
-    margin: 0 auto;
-    z-index: 15;
+  position: relative;
+  width: 102px;
+  height: 56px;
+  margin: 0 auto;
+  z-index: 15;
 }
 
 .logo img {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .logo {
     position: absolute;
-    
-   // bottom: 0;
-  //  left: 114px;
-    
-   // margin-left: -70px;
-  //  width: auto;
-    
-  //  text-align: center;
- //   z-index: 10;
-        
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
-@media screen and (min-width: @tablet-width) {  //768px
-    .logo {
-      position: absolute;
-      top: 0;
-      left: 50%;                    //45%
-    
-      
-    transform: translateX(-50%);
-    
-    }   
-}
-
-@media screen and (min-width: @desktop-width) { //1200px
-       .logo {
-      position: absolute;
-      top: 0;
-      left: 46%;                    //45%
-    
-      
-    transform: translateX(-50%);
-    
-    }   
+@media screen and (min-width: @desktop-width) {
+  .logo {
+    left: 46%;
+    transform: translateX(-45%);
+  }
 }

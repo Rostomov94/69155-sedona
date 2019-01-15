@@ -1,73 +1,54 @@
-
-
 @font-face {
-      font-family: 'Web font'; 
-      src: url('ptsans.woff2') format('woff2'), 
-           url('ptsans.woff') format('woff'),
-           url('ptsansbold.woff2') format('woff2'),
-           url('ptsansbold.woff') format('woff2');
-      font-weight: normal; 
-      font-style: normal; 
+  font-family: "web font";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff2"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-   font-family: 'PT Sans', sans-serif;
-    
-    background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #f2f2f2;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-picture {
-    
+  font-weight: normal;
 }
 
 @import "variables.less";
-@import "mixins.less";
 @import "page-wrapper.less";
-
-
 @import "header.less";
 @import "nav.less";
 @import "logo.less";
-@import "button.less";
 @import "greetings.less";
-
 @import "main.less";
 @import "information.less";
 @import "city-info.less";
 @import "leisure.less";
 @import "hotel-search.less";
-
 @import "footer.less";
 @import "hash.less";
 @import "soc-button.less";
 @import "develop.less";
-
-
 @import "emotions.less";
 @import "attraction.less";
 @import "impression.less";
 @import "contacts-info.less";
 @import "sentence.less";
 @import "name-form.less";
-
 @import "photo-and-video.less";
 @import "photo-block.less";
 @import "video.less";
-
 @import "form.less";
 @import "reason.less";
 @import "form-wrapper.less";
 @import "video-player.less";
 @import "intro-index.less";
 @import "intro-photo.less";
-
-
-
-
-
-
+@import "intro-form.less";
+@import "modal.less";

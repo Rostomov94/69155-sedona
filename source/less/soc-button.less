@@ -1,57 +1,55 @@
 .soc-button {
-    margin-bottom: 51px;
-    text-align: center;
-    display: inline;
- 
+  padding-bottom: 39px;
+  text-align: center;
+  font-size: 0;
 }
 
 .soc-button__social-btn {
+  width: 46px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  padding: 0;
+  background-color: #81b3d2;
+  cursor: pointer;
+  fill: white;
+  box-sizing: content-box;
 
-        width: 46px;
-        height: 48px;
-        display: inline-block;
-        vertical-align: top;
-    
-        margin-right: 6px;
-    
-        background-color: #81b3d2;
-        cursor: pointer;
-        fill: white;
-    
-        svg {
-            height: 100%;
-        }
-    
-        &:hover {
-            background-color: #669ec0;
-        }
-        
-        &:active {
-            
-            background-color: #5496bd;
-        }
-    
-        &:active svg {
-            opacity: 0.3;
-        }
-    
-        &:last-child {
-            margin-right: 0;
-        }
-    
+  svg {
+    height: 100%;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active svg {
+    fill: rgba(136, 182, 209, 30%);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
+@media screen and (min-width: @tablet-width) {
+  .soc-button {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-right: 8px;
+    align-items: center;
+  }
+}
 
-
-
-@media screen and (min-width: @tablet-width) {  //768px
-    
-.soc-button {
-        padding-bottom: 35px;
-        padding-top: 35px;
-        margin-bottom: 0;
-        display: inline;
-    }
-    
-    
+@media screen and (min-width: @desktop-width) {
+  .soc-button {
+    padding-left: 40px;
+    padding-right: 55px;
+  }
 }

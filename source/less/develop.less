@@ -1,58 +1,46 @@
 .develop {
-   // text-align: center;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .develop__text {
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: black;
-    float: left;
-    padding-right: 12px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 12px;
+  text-align: center;
+  padding-top: 4px;
 }
 
 .develop__icon {
-    height: 100%;
-    width: 27;
-    height: 34;
+  width: 27px;
+  height: 34px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: rgba(178, 178, 178, 30%);
+  }
 }
 
+@media screen and (min-width: @tablet-width) {
+  .develop {
+    padding-top: 0;
+    padding-right: 3px;
+  }
 
-
-.develop__icon svg {
-
-        &:hover {
-            fill: #81b3d2;
-            stroke: #81b3d2;
-        }
-        
-        &:active {
-            opacity: 0.6;
-            
-            fill: #b2b2b2;
-            stroke: #b2b2b2;
-        }
-        
+  .develop__text {
+    padding-top: 3px;
+    padding-right: 14px;
+  }
 }
 
-.develop__text {
-    padding-top: 2px;
-}
-
-
-@media screen and (min-width: @tablet-width) {  //768px
-    
-    .develop {
-        margin: 0;
-    }
-
-    
-    .develop__text {
-        float: left;
-    }
-    
-    
-    
-    
+@media screen and (min-width: @desktop-width) {
+  .develop {
+    padding-right: 10px;
+  }
 }
